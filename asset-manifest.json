@@ -1,17 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.abb9923f.js",
+    "main.js": "/static/js/main.d9b8ed69.js",
     "static/js/787.d2a5bcc5.chunk.js": "/static/js/787.d2a5bcc5.chunk.js",
+    "static/media/cultfit.png": "/static/media/cultfit.5a776a16dfa322c332ba.png",
     "static/media/wp8903994-mern-stack-wallpapers.png": "/static/media/wp8903994-mern-stack-wallpapers.d6c30e2209750064626f.png",
     "static/media/Snapchat-1231045421-removebg-preview.png": "/static/media/Snapchat-1231045421-removebg-preview.ab2b075214b1d70c04e8.png",
     "index.html": "/index.html",
     "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.abb9923f.js.map": "/static/js/main.abb9923f.js.map",
+    "main.d9b8ed69.js.map": "/static/js/main.d9b8ed69.js.map",
     "787.d2a5bcc5.chunk.js.map": "/static/js/787.d2a5bcc5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.abb9923f.js"
+    "static/js/main.d9b8ed69.js"
   ]
 }
