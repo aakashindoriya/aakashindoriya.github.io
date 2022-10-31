@@ -3,7 +3,11 @@ import Profile from "../photos/Snapchat-1231045421-removebg-preview.png";
 import {motion} from "framer-motion"
 import TypinText from "./typingText";
 import backround from "../photos/wp8903994-mern-stack-wallpapers.png"
+import dark from "../photos/darkwall.png"
+import { useContext } from "react";
+import { Theme } from "./thems";
 export default function Intro(){
+    const {theme}=useContext(Theme)
     const [isMobile] = useMediaQuery("(max-width: 768px)")
     return(
         <motion.div animate={{
@@ -20,7 +24,7 @@ export default function Intro(){
         style={{marginBottom:"-22px"}}
         >
         
-        <Box  p={10}   bgImage={backround}   backgroundPosition="center"
+        <Box  p={10}   bgImage={theme.name==="dark"?dark:backround}   backgroundPosition="center"
       backgroundRepeat="no-repeat">
             
             <Box  mt={60} mb={60} > 
@@ -42,7 +46,7 @@ export default function Intro(){
                     whileHover={{scale:1.3,color:"red"}}
                     transition={{delay:1}}
                     >
-                    <Box border={"2px solid white"} boxShadow='dark-lg' p='6' rounded='md' bg='white' borderRadius="10%">
+                    <Box border={`2px solid ${theme.borderColor}`} boxShadow='dark-lg' p='6' rounded='md' bg={theme.bgColor} borderRadius="10%">
                         <Image  src={Profile} borderRadius="10%"/>
                     </Box>
                     </motion.div>

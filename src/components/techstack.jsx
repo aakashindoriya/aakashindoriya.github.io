@@ -6,9 +6,9 @@ import { Theme } from "./thems";
 export default function TechStack (){
     let {theme}=useContext(Theme)
  return (
-    <Box  backgroundColor={theme.bgColor} pt="30px">
+    <Box  backgroundColor={theme.bgColor} pt="30px" >
          
-    <Text as="h1" color={theme.textcolor}>Tech Stack</Text>
+    <Text ml={60} as="h1" color={theme.textcolor}>Tech Stack</Text>
     <Box borderTop={"2px solid gray"} borderBottom={"2px solid gray"} p={7}>
     <motion.div
       initial="hidden"

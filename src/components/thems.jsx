@@ -13,7 +13,7 @@ let Light={
 }
 let dark={
     name:"dark",
-    borderColor:"gray",
+    borderColor:"white",
     textcolor:"white",
     bgColor:"rgb(33,36,40)",
 }
