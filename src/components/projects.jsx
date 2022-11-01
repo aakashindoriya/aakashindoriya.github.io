@@ -1,4 +1,4 @@
-import { Box, Divider, Fade, Flex,  Grid,  Image, Link, List,  ListItem, SimpleGrid, Text } from "@chakra-ui/react";
+import { Box, Divider, Flex,  Grid,  Image, Link, List,  ListItem,  Text, useMediaQuery } from "@chakra-ui/react";
 import { FcLink ,FcAlarmClock,FcGraduationCap} from "react-icons/fc";
 import { AiFillGithub } from "react-icons/ai";
 import { GiTechnoHeart } from "react-icons/gi";
@@ -10,12 +10,14 @@ import gearbest from "../photos/gearbest.png"
 import ssens from "../photos/ssens.png"
 import {motion} from "framer-motion"
 export default function Projects(){
-    let {theme}=useContext(Theme)
+    let {theme,Project}=useContext(Theme)
+    const [isMobile] = useMediaQuery("(max-width: 768px)")
 return (
-    <Box w="100%"   bgColor={theme.bgColor} border="1px solid ">
-    <Text as={"h1"} color={theme.textcolor} mt={100} ml={70} mb={30} >Projects</Text>
-        <SimpleGrid minChildWidth='330px' spacing='40px' m={10} color={theme.textcolor}  >
-        <Box border={`1px solid ${theme.borderColor}`} boxShadow='outline' p='20' rounded='md'  bgColor={theme.bgColor} >
+    <Box w="100%"   bgColor={theme.bgColor} border="1px solid " ref={Project}>
+    <Text as={"h1"} color={theme.textcolor} mt={70} ml={70} mb={20} >Projects</Text>
+    <Grid w="95%" templateColumns={isMobile?'repeat(1, 1fr)':'repeat(3, 1fr)'}  m={"auto"} color={theme.textcolor} gap={20} >
+       
+        <Box border={`1px solid ${theme.borderColor}`}   bgColor={theme.bgColor}   p='15' borderEndColor={"blue"} borderBlockStartColor={"blue"}>
             <Box as={motion.div} whileHover={{scale:1.1, border:`4px solid ${theme.borderColor}`}} >
             <Image src={cultfit} w={"100%"}/>
             </Box>
@@ -35,21 +37,21 @@ return (
                 <ListItem >
                  <Flex alignItems={"center"} gap={2} >
                  < FcAlarmClock size={30} />
-                  <Text  fontSize='md' as={"sub"}>date : 07/2022</Text>
+                  <Text  fontSize='md' as={"b"}>date : 07/2022</Text>
                  </Flex>
                  <Divider />
                 </ListItem>
                 <ListItem>
                 <Flex alignItems={"center"} gap={2} >
                 <GiTechnoHeart size={30}/>
-                  <Text fontSize='md' as={"sub"}>Tech Stack : Java-Script,HTML,CSS</Text>
+                  <Text fontSize='md' as={"b"}>Tech Stack : Java-Script,HTML,CSS</Text>
                  </Flex>
                  <Divider />
                 </ListItem>
                 <ListItem>
                 <Flex alignItems={"center"} gap={2} >
                 <FcGraduationCap size={70}/>
-                  <Text fontSize='md' as={"sub"}> area of resposiblities : Executed in under one week, worked as team lead, with a team of 5, I performed navbar, location, Care page </Text>
+                  <Text fontSize='md' as={"b"}> area of resposiblities : Executed in under one week, worked as team lead, with a team of 5, I performed navbar, location, Care page </Text>
                  </Flex>
                  <Divider />
                 </ListItem>
@@ -62,7 +64,7 @@ return (
        
 
 
-        <Box border={`1px solid ${theme.borderColor}`} boxShadow='outline' p='20' rounded='md'  bgColor={theme.bgColor}>
+        <Box border={`1px solid ${theme.borderColor}`} boxShadow='outline' p='20' rounded='md'  bgColor={theme.bgColor} borderEndColor={"blue"} borderBlockStartColor={"blue"}>
         <Box as={motion.div} whileHover={{scale:1.1, border:`4px solid ${theme.borderColor}`}} >
             <Image src={kfc} w={"100%"}/>
             </Box>
@@ -82,21 +84,21 @@ return (
                 <ListItem >
                  <Flex alignItems={"center"} gap={2} >
                  < FcAlarmClock size={30} />
-                  <Text  fontSize='md' as={"sub"}>date : 9/2022</Text>
+                  <Text  fontSize='md' as={"b"}>date : 9/2022</Text>
                  </Flex>
                  <Divider />
                 </ListItem>
                 <ListItem>
                 <Flex alignItems={"center"} gap={2} >
                 <GiTechnoHeart size={30}/>
-                  <Text fontSize='md' as={"sub"}>Tech Stack : react,react-router-dom,chakra-UI,npm JSON server,react-scroll</Text>
+                  <Text fontSize='md' as={"b"}>Tech Stack : react,react-router-dom,chakra-UI,npm JSON server,react-scroll</Text>
                  </Flex>
                  <Divider />
                 </ListItem>
                 <ListItem>
                 <Flex alignItems={"center"} gap={2} >
                 <FcGraduationCap size={70}/>
-                  <Text fontSize='md' as={"sub"}> area of resposiblities : Executed in under one week ,An individual project with end-to-end functionalities. like scrolling automatically to a point where products are listed.</Text>
+                  <Text fontSize='md' as={"b"}> area of resposiblities : Executed in under one week ,An individual project with end-to-end functionalities. like scrolling automatically to a point where products are listed.</Text>
                  </Flex>
                  <Divider />
                 </ListItem>
@@ -109,7 +111,7 @@ return (
 
 
 
-        <Box border={`1px solid ${theme.borderColor}`} boxShadow='outline' p='20' rounded='md'  bgColor={theme.bgColor} >
+        <Box border={`1px solid ${theme.borderColor}`} boxShadow='outline' p='20' rounded='md'  bgColor={theme.bgColor} borderEndColor={"blue"} borderBlockStartColor={"blue"} >
         <Box as={motion.div} whileHover={{scale:1.1, border:`4px solid ${theme.borderColor}`}} >
             <Image src={gearbest} w={"100%"}/>
             </Box>
@@ -129,21 +131,21 @@ return (
                 <ListItem >
                  <Flex alignItems={"center"} gap={2} >
                  < FcAlarmClock size={30} />
-                  <Text  fontSize='md' as={"sub"}>date : 8/2022</Text>
+                  <Text  fontSize='md' as={"b"}>date : 8/2022</Text>
                  </Flex>
                  <Divider />
                 </ListItem>
                 <ListItem>
                 <Flex alignItems={"center"} gap={2} >
                 <GiTechnoHeart size={30}/>
-                  <Text fontSize='md' as={"sub"}>Tech Stack : react,react-router-dom,chakra-UI,npm JSON server</Text>
+                  <Text fontSize='md' as={"b"}>Tech Stack : react,react-router-dom,chakra-UI,npm JSON server</Text>
                  </Flex>
                  <Divider />
                 </ListItem>
                 <ListItem>
                 <Flex alignItems={"center"} gap={2} >
                 <FcGraduationCap size={70}/>
-                  <Text fontSize='md' as={"sub"}> area of resposiblities : Executed in under one week ,An individual project with end-to-end functionalities. like navbar / login-signup /home-page /cart.</Text>
+                  <Text fontSize='md' as={"b"}> Area of resposiblities : Executed in under one week ,An individual project with end-to-end functionalities. like navbar / login-signup /home-page /cart.</Text>
                  </Flex>
                  <Divider />
                 </ListItem>
@@ -157,7 +159,7 @@ return (
 
 
 
-        <Box border={`1px solid ${theme.borderColor}`} boxShadow='outline' p='20' rounded='md'  bgColor={theme.bgColor}>
+        <Box border={`1px solid ${theme.borderColor}`} boxShadow='outline' p='20' rounded='md'  bgColor={theme.bgColor} borderEndColor={"blue"} borderBlockStartColor={"blue"}>
         <Box as={motion.div} whileHover={{scale:1.1, border:`4px solid ${theme.borderColor}`}} >
             <Image src={ssens} w={"100%"}/>
             </Box>
@@ -177,21 +179,21 @@ return (
                 <ListItem >
                  <Flex alignItems={"center"} gap={2} >
                  < FcAlarmClock size={30} />
-                  <Text  fontSize='md' as={"sub"}>date : 6/2022</Text>
+                  <Text  fontSize='md' as={"b"}>date : 6/2022</Text>
                  </Flex>
                  <Divider />
                 </ListItem>
                 <ListItem>
                 <Flex alignItems={"center"} gap={2} >
                 <GiTechnoHeart size={30}/>
-                  <Text fontSize='md' as={"sub"}>Tech Stack : html,css,localStorage,java-script</Text>
+                  <Text fontSize='md' as={"b"}>Tech Stack : html,css,localStorage,java-script</Text>
                  </Flex>
                  <Divider />
                 </ListItem>
                 <ListItem>
                 <Flex alignItems={"center"} gap={2} >
                 <FcGraduationCap size={70}/>
-                  <Text fontSize='md' as={"sub"}>  area of resposiblities : Executed in under one week,  with a team of 5, I performed homePage & fotter</Text>
+                  <Text fontSize='md' as={"b"}>  area of resposiblities : Executed in under one week,  with a team of 5, I performed homePage & fotter</Text>
                  </Flex>
                  <Divider />
                 </ListItem>
@@ -200,8 +202,8 @@ return (
 
             
         </Box>
-        
-        </SimpleGrid>
+        </Grid>
+    
     </Box>
 )
 }

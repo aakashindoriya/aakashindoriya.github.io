@@ -1,14 +1,15 @@
-import { Box, Center, Divider, Image, SimpleGrid, Text } from "@chakra-ui/react";
+import { Box, Center, Divider, Grid, Image, Text, useMediaQuery } from "@chakra-ui/react";
 import { motion } from "framer-motion"; 
 import { useContext } from "react";
 import { Theme } from "./thems";
 
 export default function TechStack (){
-    let {theme}=useContext(Theme)
+    let {theme,Skill}=useContext(Theme)
+    const [isMobile] = useMediaQuery("(max-width: 768px)")
  return (
-    <Box  backgroundColor={theme.bgColor} pt="30px" >
+    <Box  backgroundColor={theme.bgColor} pt="30px" w={"100%"} ref={Skill} >
          
-    <Text ml={60} as="h1" color={theme.textcolor}>Tech Stack</Text>
+    <Text  ml={60} as="h1" color={theme.textcolor} mt={50}>Tech Stack</Text>
     <Box borderTop={"2px solid gray"} borderBottom={"2px solid gray"} p={7}>
     <motion.div
       initial="hidden"
@@ -22,8 +23,8 @@ export default function TechStack (){
     >
     <Divider colorScheme={theme.textcolor} />
        
-        <SimpleGrid minChildWidth='120px' spacing='40px'>
-
+        
+        <Grid w="98%" templateColumns={isMobile?'repeat(3, 1fr)':'repeat(6, 1fr)' } gap={30}>
         <Box>
         <motion.div 
          initial="hidden"
@@ -32,7 +33,7 @@ export default function TechStack (){
          transition={{ delay:1}}
          variants={{
            visible: { x:0,opacity:1 },
-           hidden: { x:"-2000px",opacity:0 }
+           hidden: { x:"-10vh",opacity:0 }
          }}                     
                         >
                             <Center>
@@ -50,7 +51,7 @@ export default function TechStack (){
          transition={{ delay:1.4}}
          variants={{
            visible: { x:0,opacity:1 },
-           hidden: { x:"-2000px",opacity:0 }
+           hidden: { x:"-10vh",opacity:0 }
          }}                        
                         >
                             <Center>
@@ -68,7 +69,7 @@ export default function TechStack (){
          transition={{ delay:1.8}}
          variants={{
            visible: { x:0,opacity:1 },
-           hidden: { x:"-2000px",opacity:0 }
+           hidden: { x:"-10vh",opacity:0 }
          }}                                          
                         >
                             <Center>
@@ -86,7 +87,7 @@ export default function TechStack (){
          transition={{ delay:2.2}}
          variants={{
            visible: { x:0,opacity:1 },
-           hidden: { x:"200vh",opacity:0 }
+           hidden: { x:"10vh",opacity:0 }
          }}                                          
                         >
                             <Center>
@@ -104,7 +105,7 @@ export default function TechStack (){
          transition={{ delay:2.8}}
          variants={{
            visible: { x:0,opacity:1 },
-           hidden: { x:"200vh",opacity:0 }
+           hidden: { x:"10vh",opacity:0 }
          }}                                           
                         >
                             <Center>
@@ -122,7 +123,7 @@ export default function TechStack (){
          transition={{ delay:3.2}}
          variants={{
            visible: { x:0,opacity:1 },
-           hidden: { x:"200vh",opacity:0 }
+           hidden: { x:"10vh",opacity:0 }
          }}                                          
                         >
                             <Center>
@@ -134,8 +135,8 @@ export default function TechStack (){
                         </motion.div>
         </Box>
         
-            
-        </SimpleGrid>
+        </Grid>  
+        
         <Divider />
         </motion.div>
         </Box>

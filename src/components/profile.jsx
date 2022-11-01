@@ -1,32 +1,40 @@
-import { Box, Container, Image, keyframes } from '@chakra-ui/react';
-import { motion } from 'framer-motion';
-import profile from "../photos/Snapchat-1231045421-removebg-preview.png"
+import { Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerHeader, DrawerOverlay, Image, Text, useDisclosure } from "@chakra-ui/react"
+import React, { useContext } from "react"
+import {motion} from "framer-motion"
+import { Theme } from "./thems"
+import hamburger from "../photos/icons8-hamburger-menu-91.png"
+export default function DrawerExample() {
+  const {theme,executeScroll}=useContext(Theme)
+  const { isOpen, onOpen, onClose } = useDisclosure()
+  const btnRef = React.useRef()
 
-
-const animationKeyframes = keyframes`
-  0% { transform: scale(1) rotate(0); border-radius: 20%; }
-  25% { transform: scale(2) rotate(0); border-radius: 20%; }
-  50% { transform: scale(2) rotate(270deg); border-radius: 50%; }
-  75% { transform: scale(1) rotate(270deg); border-radius: 50%; }
-  100% { transform: scale(1) rotate(0); border-radius: 20%; }
-`;
-
-const animation = `${animationKeyframes} 10s ease-in-out infinite`;
-  
-export default function Profile() {
   return (
-    <Container h="100vh" display="flex" alignItems="center" justifyContent="center" >
-      <Box
-        as={motion.div}
-        animation={animation}
-        // not work: transition={{ ... }}
-        padding="2"
-        // @ts-ignore - "Does not exist" Type Error against Motion
-        bgColor={"red.100"}
-        width="12px"
-        height="12px" 
-        display="flex"
-      />
-    </Container>
+    <> 
+      <Button ref={btnRef} colorScheme='teal' onClick={onOpen}>
+      <Image w="45px" h="45px" src={hamburger}  mr={30}/>
+      </Button>
+      <Drawer
+        isOpen={isOpen}
+        placement='left'
+        onClose={onClose}
+        finalFocusRef={btnRef}
+      >
+        <DrawerOverlay />
+        <DrawerContent>
+          <DrawerCloseButton />
+          <DrawerHeader>Thanks for visiting Please Provide feedback</DrawerHeader>
+
+          <DrawerBody>
+          <Button as={motion.div} whileHover={{scale:1.2 ,color:"teal"}} bgColor={"transparent"} border="none" size={"md"}><Text as={"b"} color={theme.textcolor}  onClick={()=>executeScroll("home")}>HOME</Text></Button>
+                 <Button as={motion.div} whileHover={{scale:1.2 ,color:"teal"}} bgColor={"transparent"} border="none" size={"md"}><Text as={"b"}  color={theme.textcolor} onClick={()=>executeScroll("skill")}>SKILLS</Text></Button>
+                 <Button as={motion.div} whileHover={{scale:1.2 ,color:"teal"}} bgColor={"transparent"} border="none" size={"md"}> <Text as={"b"}  color={theme.textcolor} onClick={()=>executeScroll("project")}>PROJECTS</Text></Button>
+                 <Button as={motion.div} whileHover={{scale:1.2 ,color:"teal"}} bgColor={"transparent"} border="none" size={"md"}><Text as={"b"}  color={theme.textcolor}>CONTECT</Text></Button>
+            
+          </DrawerBody>
+
+          
+        </DrawerContent>
+      </Drawer>
+    </>
   )
-};
+}
