@@ -37,7 +37,7 @@ export default function ThemeProvider({children}){
         }
     } 
 
-     let [theme,setthem]=useState(Light)
+     let [theme,setthem]=useState(dark)
      function changeTheme(){
         setthem(theme.name==="light"?dark:Light)
      }

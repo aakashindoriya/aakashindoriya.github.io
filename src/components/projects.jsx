@@ -23,7 +23,7 @@ return (
             </Box>
             <Flex justifyContent={"space-around"} alignItems={"center"}>
                 <Box>
-                <Text as={"b"} color={"red"} fontSize={30}>Cult-fit Clone</Text>
+                <Text as={"b"} color={"red"} fontSize={30}>Cult.fit</Text>
                 </Box>
                 <Box>
                     <Link href="https://astounding-scone-73c2d5.netlify.app/"><FcLink size={40} m={2} /></Link>
@@ -32,26 +32,26 @@ return (
                 </Box>
                 
             </Flex>
-            <Text color={theme.textcolor} fontSize={20} as={"b"}>cult.fit (formerly cure.fit or Curefit) is a health and fitness company</Text>
-            <List spacing={3} color={theme.textcolor}>
+            <Text color={theme.textcolor} fontSize={20} as={"b"}>Cult.fit (formerly cure.fit or Curefit) is a health and fitness company</Text>
+            <List spacing={3} color={theme.textcolor} ml={-25}>
                 <ListItem >
                  <Flex alignItems={"center"} gap={2} >
                  < FcAlarmClock size={30} />
-                  <Text  fontSize='md' as={"b"}>date : 07/2022</Text>
+                  <Text  fontSize='md' as={"b"}>Date : 07/2022</Text>
                  </Flex>
                  <Divider />
                 </ListItem>
                 <ListItem>
                 <Flex alignItems={"center"} gap={2} >
                 <GiTechnoHeart size={30}/>
-                  <Text fontSize='md' as={"b"}>Tech Stack : Java-Script,HTML,CSS</Text>
+                <Text fontSize='sm' as={"b"}><Text fontSize='20px' as={"b"} color={"red"} >Tech Stack :</Text><br/>• Java-Script<br/>• HTML<br/>• CSS</Text>
                  </Flex>
                  <Divider />
                 </ListItem>
                 <ListItem>
                 <Flex alignItems={"center"} gap={2} >
                 <FcGraduationCap size={70}/>
-                  <Text fontSize='md' as={"b"}> area of resposiblities : Executed in under one week, worked as team lead, with a team of 5, I performed navbar, location, Care page </Text>
+                <Text fontSize='sm' as={"b"}><Text fontSize='20px' as={"b"} color={"red"} >Area of responsibility :</Text> Worked as team lead , executed in under one week, with a team of 5, I performed Navbar / Location / Care-Page </Text>
                  </Flex>
                  <Divider />
                 </ListItem>
@@ -70,7 +70,7 @@ return (
             </Box>
             <Flex justifyContent={"space-around"} alignItems={"center"}>
                 <Box>
-                <Text as={"b"} color={"red"} fontSize={30}>kfc.com</Text>
+                <Text as={"b"} color={"red"} fontSize={30}>Kfc.com</Text>
                 </Box>
                 <Box>
                     <Link href="https://clonekfc-aakashindoriya.vercel.app/"><FcLink size={40} m={2} /></Link>
@@ -79,26 +79,30 @@ return (
                 </Box>
                 
             </Flex>
-            <Text color={theme.textcolor} fontSize={20} as={"b"}>KFC is the US bashed well-known restaurant chain</Text>
-            <List spacing={3} color={theme.textcolor}>
+            <Text color={theme.textcolor} fontSize={20} as={"b"}>KFC is the US based well-known restaurant chain</Text>
+            <List spacing={1} color={theme.textcolor} ml={-25}>
                 <ListItem >
                  <Flex alignItems={"center"} gap={2} >
                  < FcAlarmClock size={30} />
-                  <Text  fontSize='md' as={"b"}>date : 9/2022</Text>
+                  <Text  fontSize='md' as={"b"}>Date : 9/2022</Text>
                  </Flex>
                  <Divider />
                 </ListItem>
                 <ListItem>
                 <Flex alignItems={"center"} gap={2} >
                 <GiTechnoHeart size={30}/>
-                  <Text fontSize='md' as={"b"}>Tech Stack : react,react-router-dom,chakra-UI,npm JSON server,react-scroll</Text>
+                    
+                <Text fontSize='sm' as={"b"}><Text fontSize='20px' as={"b"} color={"red"} >Tech Stack :</Text><br/>• React <br/>• React-router-dom <br/>• Chakra-UI<br/>• JSON Server <br/>• React-scroll</Text>
                  </Flex>
                  <Divider />
                 </ListItem>
                 <ListItem>
                 <Flex alignItems={"center"} gap={2} >
                 <FcGraduationCap size={70}/>
-                  <Text fontSize='md' as={"b"}> area of resposiblities : Executed in under one week ,An individual project with end-to-end functionalities. like scrolling automatically to a point where products are listed.</Text>
+                <Text fontSize='sm' as={"b"}><Text fontSize='20px' as={"b"} color={"red"} >Features :</Text><br/>• Users can signup/login<br/>
+                  • The menu page will automatically scroll to the user-selected category <br/>
+                  • Users can add items to the cart and manage the quantity<br/>
+                  • Users can not order without a login<br/></Text>
                  </Flex>
                  <Divider />
                 </ListItem>
@@ -127,25 +131,28 @@ return (
                 
             </Flex>
             <Text color={theme.textcolor} fontSize={20} as={"b"}>Gearbest is USA based e-commerce website</Text>
-            <List spacing={3} color={theme.textcolor}>
+            <List spacing={3} color={theme.textcolor} ml={-25}>
                 <ListItem >
                  <Flex alignItems={"center"} gap={2} >
                  < FcAlarmClock size={30} />
-                  <Text  fontSize='md' as={"b"}>date : 8/2022</Text>
+                  <Text  fontSize='md' as={"b"}>Date : 8/2022</Text>
                  </Flex>
                  <Divider />
                 </ListItem>
                 <ListItem>
                 <Flex alignItems={"center"} gap={2} >
                 <GiTechnoHeart size={30}/>
-                  <Text fontSize='md' as={"b"}>Tech Stack : react,react-router-dom,chakra-UI,npm JSON server</Text>
+                <Text fontSize='sm' as={"b"}><Text fontSize='20px' as={"b"} color={"red"} >Tech Stack :</Text><br/>• React <br/>• React-router-dom <br/>• Chakra-UI<br/>• JSON-Server</Text>
                  </Flex>
                  <Divider />
                 </ListItem>
                 <ListItem>
                 <Flex alignItems={"center"} gap={2} >
                 <FcGraduationCap size={70}/>
-                  <Text fontSize='md' as={"b"}> Area of resposiblities : Executed in under one week ,An individual project with end-to-end functionalities. like navbar / login-signup /home-page /cart.</Text>
+                <Text fontSize='sm' as={"b"}><Text fontSize='20px' as={"b"} color={"red"} >Features :</Text><br/>• Users can signup/login .user can select an item that will lead to a different page
+                  <br/>• Page information gets tracked by URL
+                  <br/>• Users can add items to the cart and manage the quantity
+                  <br/>• Users can not order without a login</Text>
                  </Flex>
                  <Divider />
                 </ListItem>
@@ -165,7 +172,7 @@ return (
             </Box>
             <Flex justifyContent={"space-around"} alignItems={"center"}>
                 <Box>
-                <Text as={"b"} color={"red"} fontSize={30}>ssense.com</Text>
+                <Text as={"b"} color={"red"} fontSize={30}>Ssense.com</Text>
                 </Box>
                 <Box>
                     <Link href="https://suraj-996.github.io/ssense_unit2_project/"><FcLink size={40} m={2} /></Link>
@@ -174,26 +181,26 @@ return (
                 </Box>
                 
             </Flex>
-            <Text color={theme.textcolor} fontSize={20} as={"b"}>ssens is e-commerce website</Text>
-            <List spacing={3} color={theme.textcolor}>
+            <Text color={theme.textcolor} fontSize={20} as={"b"}>Ssens is e-commerce website</Text>
+            <List spacing={3} color={theme.textcolor} ml={-25}>
                 <ListItem >
                  <Flex alignItems={"center"} gap={2} >
                  < FcAlarmClock size={30} />
-                  <Text  fontSize='md' as={"b"}>date : 6/2022</Text>
+                  <Text  fontSize='md' as={"b"}>Date : 6/2022</Text>
                  </Flex>
                  <Divider />
                 </ListItem>
                 <ListItem>
                 <Flex alignItems={"center"} gap={2} >
                 <GiTechnoHeart size={30}/>
-                  <Text fontSize='md' as={"b"}>Tech Stack : html,css,localStorage,java-script</Text>
+                  <Text fontSize='sm' as={"b"}><Text fontSize='20px' as={"b"} color={"red"} >Tech Stack :</Text> <br/>• HTML <br/>• CSS <br/>• LocalStorage <br/>• Java-Script</Text>
                  </Flex>
                  <Divider />
                 </ListItem>
                 <ListItem>
                 <Flex alignItems={"center"} gap={2} >
                 <FcGraduationCap size={70}/>
-                  <Text fontSize='md' as={"b"}>  area of resposiblities : Executed in under one week,  with a team of 5, I performed homePage & fotter</Text>
+                <Text fontSize='sm' as={"b"}><Text fontSize='20px' as={"b"} color={"red"} >Area of responsibility :</Text> Executed in under one week,  with a team of 5, I performed homePage & fotter</Text>
                  </Flex>
                  <Divider />
                 </ListItem>

@@ -51,6 +51,7 @@ export default function Intro(){
                     <Box border={`2px solid ${theme.borderColor}`} boxShadow='dark-lg' p='6' rounded='md' bg={theme.bgColor} borderRadius="10%">
                         <Image  src={Profile} borderRadius="10%" m={"auto"}/>
                     </Box>
+                   
                     </Center>
                     </motion.div>
                 </Flex>
