@@ -1,5 +1,5 @@
-import {Box, Button, Flex,  Image,  Link,  Text,  useMediaQuery} from  "@chakra-ui/react"
-import hamburger from "../photos/icons8-hamburger-menu-91.png"
+import {Box, Button, Flex,  Image,   Text,  useMediaQuery} from  "@chakra-ui/react"
+
 import {BsFillBrightnessHighFill } from "react-icons/bs";
 import {FcNightPortrait } from "react-icons/fc";
 import {motion} from "framer-motion"
@@ -42,7 +42,7 @@ export default function Navbar(){
                  <Button as={motion.div} whileHover={{scale:1.2 ,color:"teal"}} bgColor={"transparent"} border="none" size={"md"}><Text as={"b"} color={theme.textcolor}  onClick={()=>executeScroll("home")}>HOME</Text></Button>
                  <Button as={motion.div} whileHover={{scale:1.2 ,color:"teal"}} bgColor={"transparent"} border="none" size={"md"}><Text as={"b"}  color={theme.textcolor} onClick={()=>executeScroll("skill")}>SKILLS</Text></Button>
                  <Button as={motion.div} whileHover={{scale:1.2 ,color:"teal"}} bgColor={"transparent"} border="none" size={"md"}> <Text as={"b"}  color={theme.textcolor} onClick={()=>executeScroll("project")}>PROJECTS</Text></Button>
-                 <Button as={motion.div} whileHover={{scale:1.2 ,color:"teal"}} bgColor={"transparent"} border="none" size={"md"}><Text as={"b"}  color={theme.textcolor}>CONTECT</Text></Button>
+                 <Button as={motion.div} whileHover={{scale:1.2 ,color:"teal"}} bgColor={"transparent"} border="none" size={"md"}><Text as={"b"}  color={theme.textcolor}onClick={()=>executeScroll("contact")}>CONTACT</Text></Button>
                  </Flex>
                 
                     </Box>}

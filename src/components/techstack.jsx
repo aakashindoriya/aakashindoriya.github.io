@@ -27,14 +27,14 @@ export default function TechStack (){
         <Grid w="98%" templateColumns={isMobile?'repeat(3, 1fr)':'repeat(6, 1fr)' } gap={30}>
         <Box>
         <motion.div 
-         initial="hidden"
-         whileInView="visible"
-         viewport={{ once: true }}
-         transition={{ delay:1}}
-         variants={{
-           visible: { x:0,opacity:1 },
-           hidden: { x:"-10vh",opacity:0 }
-         }}                     
+        //  initial="hidden"
+        //  whileInView="visible"
+        //  viewport={{ once: true }}
+        //  transition={{ delay:1}}
+        //  variants={{
+        //    visible: { x:0,opacity:1 },
+        //    hidden: { x:"-10vh",opacity:0 }
+        //  }}                     
                         >
                             <Center>
                             <Box border={`2px solid ${theme.textcolor}`} textAlign="center" p={5} >

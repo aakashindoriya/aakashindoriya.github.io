@@ -36,7 +36,7 @@ export default function DrawerExample() {
     <MenuItem  minH='48px' onClick={()=>executeScroll("project")}  backgroundColor={theme.bgColor} color={theme.textcolor}>
       PROJECTS
     </MenuItem>
-    <MenuItem  minH='48px'  backgroundColor={theme.bgColor} color={theme.textcolor}>
+    <MenuItem  minH='48px' onClick={()=>executeScroll("contact")} backgroundColor={theme.bgColor} color={theme.textcolor}>
     CONTACT
     </MenuItem>
   </MenuList>

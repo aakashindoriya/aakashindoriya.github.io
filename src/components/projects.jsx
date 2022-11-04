@@ -13,7 +13,7 @@ export default function Projects(){
     let {theme,Project}=useContext(Theme)
     const [isMobile] = useMediaQuery("(max-width: 768px)")
 return (
-    <Box w="100%"   bgColor={theme.bgColor} border="1px solid " ref={Project}>
+    <Box w="100%"   bgColor={theme.bgColor} border="1px solid " ref={Project} pb={20}>
     <Text as={"h1"} color={theme.textcolor} mt={70} ml={70} mb={20} >Projects</Text>
     <Grid w="95%" templateColumns={isMobile?'repeat(1, 1fr)':'repeat(3, 1fr)'}  m={"auto"} color={theme.textcolor} gap={20} >
        

@@ -2,6 +2,7 @@
 
 import { Box } from '@chakra-ui/react';
 import './App.css';
+import Contact from './components/contact';
 import Intro from './components/intro';
 import Navbar from "./components/navbar"
 import Projects from './components/projects';
@@ -14,6 +15,7 @@ function App() {
         <Intro />
         <TechStack />
         <Projects />
+        <Contact />
         </Box>
        </>  
        

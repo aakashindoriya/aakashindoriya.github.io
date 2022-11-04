@@ -24,14 +24,14 @@ let dark={
 export default function ThemeProvider({children}){
     const Home = useRef(null)
      const Skill = useRef(null)
-     const Contect = useRef(null)
+     const Contact = useRef(null)
      const Project=useRef(null)
 
      const executeScroll = (arg) =>{
         switch(arg){
             case "home":Home.current.scrollIntoView({behavior: "smooth"});break;
             case "skill":Skill.current.scrollIntoView({behavior: "smooth"}); break;
-            case "contect":Contect.current.scrollIntoView({behavior: "smooth"}); break;
+            case "contact":Contact.current.scrollIntoView({behavior: "smooth"}); break;
             case "project":Project.current.scrollIntoView({behavior: "smooth"}); break;
             default  :return;
         }
@@ -41,5 +41,5 @@ export default function ThemeProvider({children}){
      function changeTheme(){
         setthem(theme.name==="light"?dark:Light)
      }
-   return( <Theme.Provider value={{theme,changeTheme,Home,Skill,Contect,Project,executeScroll}}>{children}</Theme.Provider>)
+   return( <Theme.Provider value={{theme,changeTheme,Home,Skill,Contact,Project,executeScroll}}>{children}</Theme.Provider>)
 }
