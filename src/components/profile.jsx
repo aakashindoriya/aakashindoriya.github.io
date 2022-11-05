@@ -27,7 +27,7 @@ export default function DrawerExample() {
     variant='outline'
   />
   <MenuList scale={10}>
-    <MenuItem  minH='48px' minW={"150px"}  onClick={()=>executeScroll("home")}  backgroundColor={theme.bgColor} color={theme.textcolor}>
+    <MenuItem  minH='48px' minW={"150px"} on onClick={()=>executeScroll("home")}  backgroundColor={theme.bgColor} color={theme.textcolor}>
       HOME
     </MenuItem>
     <MenuItem minH='48px' onClick={()=>executeScroll("skill")}  backgroundColor={theme.bgColor} color={theme.textcolor}>

@@ -13,12 +13,12 @@ export default function Projects(){
     let {theme,Project}=useContext(Theme)
     const [isMobile] = useMediaQuery("(max-width: 768px)")
 return (
-    <Box w="100%"   bgColor={theme.bgColor} border="1px solid " ref={Project} pb={20}>
+    <Box borderTop={`1px solid ${theme.borderColor} `}  bgColor={theme.bgColor} borderBottom={`1px solid ${theme.borderColor} `} ref={Project} pb={20}>
     <Text as={"h1"} color={theme.textcolor} mt={70} ml={70} mb={20} >Projects</Text>
     <Grid w="95%" templateColumns={isMobile?'repeat(1, 1fr)':'repeat(3, 1fr)'}  m={"auto"} color={theme.textcolor} gap={20} >
        
         <Box border={`1px solid ${theme.borderColor}`}   bgColor={theme.bgColor}   p='15' borderEndColor={"blue"} borderBlockStartColor={"blue"}>
-            <Box as={motion.div} whileHover={{scale:1.1, border:`4px solid ${theme.borderColor}`}} >
+            <Box as={motion.div} whileHover={{scale:1.1, border:`2px solid ${theme.borderColor}`}} >
             <Image src={cultfit} w={"100%"}/>
             </Box>
             <Flex justifyContent={"space-around"} alignItems={"center"}>
@@ -65,7 +65,7 @@ return (
 
 
         <Box border={`1px solid ${theme.borderColor}`} boxShadow='outline' p='20' rounded='md'  bgColor={theme.bgColor} borderEndColor={"blue"} borderBlockStartColor={"blue"}>
-        <Box as={motion.div} whileHover={{scale:1.1, border:`4px solid ${theme.borderColor}`}} >
+        <Box as={motion.div} whileHover={{scale:1.1, border:`2px solid ${theme.borderColor}`}} >
             <Image src={kfc} w={"100%"}/>
             </Box>
             <Flex justifyContent={"space-around"} alignItems={"center"}>
@@ -116,7 +116,7 @@ return (
 
 
         <Box border={`1px solid ${theme.borderColor}`} boxShadow='outline' p='20' rounded='md'  bgColor={theme.bgColor} borderEndColor={"blue"} borderBlockStartColor={"blue"} >
-        <Box as={motion.div} whileHover={{scale:1.1, border:`4px solid ${theme.borderColor}`}} >
+        <Box as={motion.div} whileHover={{scale:1.1, border:`2px solid ${theme.borderColor}`}} >
             <Image src={gearbest} w={"100%"}/>
             </Box>
             <Flex justifyContent={"space-around"} alignItems={"center"}>
@@ -167,7 +167,7 @@ return (
 
 
         <Box border={`1px solid ${theme.borderColor}`} boxShadow='outline' p='20' rounded='md'  bgColor={theme.bgColor} borderEndColor={"blue"} borderBlockStartColor={"blue"}>
-        <Box as={motion.div} whileHover={{scale:1.1, border:`4px solid ${theme.borderColor}`}} >
+        <Box as={motion.div} whileHover={{scale:1.1, border:`2px solid ${theme.borderColor}`}} >
             <Image src={ssens} w={"100%"}/>
             </Box>
             <Flex justifyContent={"space-around"} alignItems={"center"}>

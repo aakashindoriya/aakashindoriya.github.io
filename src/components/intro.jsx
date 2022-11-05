@@ -21,7 +21,7 @@ export default function Intro(){
         transition={{
             delay:0.3,duration:0.7
         }}
-        style={{marginBottom:"-22px"}}
+        style={{marginBottom:"-22px" ,width:"100%"}}
         ref={Home}
         >
         
