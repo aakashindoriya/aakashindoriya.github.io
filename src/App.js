@@ -10,7 +10,7 @@ import Projects from './components/projects';
 import TechStack from './components/techstack';
 function App() {
   return (
-       <>
+       <div>
         <Navbar />
         <Box position={"sticky"} top={"80px"} w={"99.80%"} m={"auto"} >
         <Intro />
@@ -19,7 +19,7 @@ function App() {
         <GithubCalender />
         <Contact />
         </Box>
-       </>  
+       </div>  
        
    
   );
