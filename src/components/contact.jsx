@@ -17,7 +17,7 @@ export default function Contact(){
             <Flex alignItems={"center"} gap={20}
                 as={motion.div} 
                 initial={{x:"10vh",opacity:0.5 }}
-                viewport={{ once: true }}
+                viewport={{ once: false }}
                 whileInView={{x:0,opacity:1}}
                 transition={{ delay:1.4}}
                 whileHover={{scale:1.1,color:"red"}}
@@ -29,7 +29,7 @@ export default function Contact(){
                 
                 as={motion.div} 
                 initial={{x:"10vh",opacity:0.5 }}
-                viewport={{ once: true }}
+                viewport={{ once: false }}
                 whileInView={{x:0,opacity:1}}
                 transition={{ delay:1}}
                 whileHover={{scale:1.1,color:"red"}}
@@ -41,7 +41,7 @@ export default function Contact(){
                 <Flex alignItems={"center"} gap={20}
                 as={motion.div} 
                 initial={{x:"10vh",opacity:0.5 }}
-                viewport={{ once: true }}
+                viewport={{ once: false }}
                 whileInView={{x:0,opacity:1}}
                 transition={{ delay:1.8}}
                 whileHover={{scale:1.1,color:"red"}}
@@ -54,7 +54,7 @@ export default function Contact(){
                 as={motion.div} 
                 transition={{ delay:2.8}}
                 initial={{x:"10vh",opacity:0.5 }}
-                viewport={{ once: true }}
+                viewport={{ once: false }}
                 whileInView={{x:0,opacity:1}}
                 whileHover={{scale:1.1,color:"red"}}
                 >
@@ -64,7 +64,7 @@ export default function Contact(){
                 <Flex alignItems={"center"} gap={20}
                 as={motion.div} 
                 initial={{x:"10vh",opacity:0.5 }}
-                viewport={{ once: true }}
+                viewport={{ once: false}}
                 whileInView={{x:0,opacity:1}}
                 transition={{ delay:2.2}}
                 whileHover={{scale:1.1,color:"red"}}

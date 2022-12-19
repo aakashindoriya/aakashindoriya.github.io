@@ -2,6 +2,7 @@ import { Box, Flex, Image, Text, useMediaQuery } from "@chakra-ui/react";
 import { useContext } from "react";
 import GitHubCalendar from "react-github-calendar";
 import { Theme } from "./thems";
+import {motion}from "framer-motion"
 
 export default function GithubCalender(){
     const [isMobile] = useMediaQuery("(max-width: 768px)") 
@@ -18,10 +19,16 @@ let {theme} =useContext(Theme)
         
         /></Box> 
         <Text ml="10%" mt={50} mb={10} as="b" fontSize={"30px"}>GitHub Graph</Text>
-        <Image w="100%" src={`https://activity-graph.herokuapp.com/graph?username=aakashindoriya&custom_title=Aakash%20Indoriya%27s%20Contribution%20Graph&theme=gruvbox&bg_color=${theme.bgColor}&hide_border=true&line=d1a01f&point=c58545`} p={2}/>
-        <Flex flexDirection={isMobile?"column":"row"} alignItems="center" justifyContent={"space-around"} p={2}>
-            <Image  src="https://github-readme-stats.vercel.app/api?username=aakashindoriya&show_icons=true&theme=gruvbox&hide_border=true" />
-            <Image  src="https://github-readme-streak-stats.herokuapp.com/?user=aakashindoriya&theme=gruvbox&hide_border=true"/>
+        <Image
+        as={motion.img}
+        initial={{x:"10px",opacity:0 }}
+        viewport={{ once: false }}
+        whileInView={{x:0,opacity:1}}
+        transition={{ delay:1.8}}
+        w="99%" src={`https://github-readme-activity-graph.cyclic.app/graph?username=aakashindoriya&bg_color=${theme.bgColor}&color=898ed7&line=7b7fe5&point=001eff&area=true&hide_border=true`} p={2}/>
+        <Flex w="90%" flexDirection={isMobile?"column":"row"} alignItems="center" justifyContent={"space-around"} p={2} m="auto">
+            <Image w={isMobile?"90%":"45%"} src="https://github-readme-stats.vercel.app/api?username=aakashindoriya&show_icons=true&theme=gruvbox&hide_border=true" />
+            <Image w={isMobile?"90%":"45%"} src="https://github-readme-streak-stats.herokuapp.com/?user=aakashindoriya&theme=gruvbox&hide_border=true"/>
         </Flex>
         </Box>
         </Box>

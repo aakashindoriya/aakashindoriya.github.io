@@ -1,31 +1,20 @@
 import { Box, Text } from "@chakra-ui/react"
-import { useEffect } from "react"
-import { useState } from "react"
+import Typed from "react-typed"
 
 export default function TypinText({paragraph}){
-    let [text,setText]=useState("")
-    useEffect(()=>{
-        let index=-1
-        let id=setInterval(()=>{
-            if(index===paragraph.length-1){
-                index=-1
-                setText("")
-            }
-            index++
-            setText((pre)=> { 
-                
-                return pre+paragraph[index]
-            
-        })
-            
-        },200)
-        return(()=>{
-            clearInterval(id)
-        })
-    },[])
+   let s={
+    color:"teal",
+    fontSize:"30px",
+    fontWeight:"bold"
+   }
     return(
         <Box>
-        <Text as={"h2"} color="teal">{text}</Text>
+       <Typed strings={["A Full Stack Web Devloper","An aspiring Java-Script Devloper"]}
+       typeSpeed={150}
+       backSpeed={100}
+       loop
+       style={s}
+       />
         </Box>
     )
 }

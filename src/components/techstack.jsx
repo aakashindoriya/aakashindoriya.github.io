@@ -15,7 +15,7 @@ export default function TechStack (){
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      transition={{ duration: 0.3 }}
+      transition={{ type:"tween", duration: 0.3 }}
       variants={{
         visible: { opacity: 1, scale: 1 },
         hidden: { opacity: 0, scale: 0 }
@@ -24,7 +24,7 @@ export default function TechStack (){
     <Divider colorScheme={theme.textcolor} />
        
         
-        <Grid w="98%" templateColumns={isMobile?'repeat(3, 1fr)':'repeat(6, 1fr)' } gap={30}>
+        <Grid w="98%" templateColumns={isMobile?'repeat(3, 1fr)':'repeat(6, 1fr)' } gap={20}>
         <Box>
         <motion.div 
         //  initial="hidden"
@@ -48,10 +48,10 @@ export default function TechStack (){
          <motion.div   initial="hidden"
          whileInView="visible"
          viewport={{ once: true }}
-         transition={{ delay:1.4}}
+         transition={{type:"tween", delay:1.4}}
          variants={{
            visible: { x:0,opacity:1 },
-           hidden: { x:"-10vh",opacity:0 }
+           hidden: { x:"-10px",opacity:0 }
          }}                        
                         >
                             <Center>
@@ -66,10 +66,10 @@ export default function TechStack (){
         <motion.div  initial="hidden"
          whileInView="visible"
          viewport={{ once: true }}
-         transition={{ delay:1.8}}
+         transition={{type:"tween", delay:1.8}}
          variants={{
            visible: { x:0,opacity:1 },
-           hidden: { x:"-10vh",opacity:0 }
+           hidden: { x:"-10px",opacity:0 }
          }}                                          
                         >
                             <Center>
@@ -84,10 +84,10 @@ export default function TechStack (){
          <motion.div  initial="hidden"
          whileInView="visible"
          viewport={{ once: true }}
-         transition={{ delay:2.2}}
+         transition={{ type:"tween",delay:2.2}}
          variants={{
            visible: { x:0,opacity:1 },
-           hidden: { x:"10vh",opacity:0 }
+           hidden: { x:"10px",opacity:0 }
          }}                                          
                         >
                             <Center>
@@ -102,10 +102,10 @@ export default function TechStack (){
          <motion.div  initial="hidden"
          whileInView="visible"
          viewport={{ once: true }}
-         transition={{ delay:2.8}}
+         transition={{ type:"tween",delay:2.8}}
          variants={{
            visible: { x:0,opacity:1 },
-           hidden: { x:"10vh",opacity:0 }
+           hidden: { x:"10px",opacity:0 }
          }}                                           
                         >
                             <Center>
@@ -120,10 +120,10 @@ export default function TechStack (){
         <motion.div  initial="hidden"
          whileInView="visible"
          viewport={{ once: true }}
-         transition={{ delay:3.2}}
+         transition={{type:"tween", delay:3.2}}
          variants={{
            visible: { x:0,opacity:1 },
-           hidden: { x:"10vh",opacity:0 }
+           hidden: { x:"10px",opacity:0 }
          }}                                          
                         >
                             <Center>

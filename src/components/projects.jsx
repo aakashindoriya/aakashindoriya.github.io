@@ -13,22 +13,29 @@ export default function Projects(){
     let {theme,Project}=useContext(Theme)
     const [isMobile] = useMediaQuery("(max-width: 768px)")
 return (
-    <Box borderTop={`1px solid ${theme.borderColor} `}  bgColor={theme.bgColor} borderBottom={`1px solid ${theme.borderColor} `} ref={Project} pb={20}>
+    <Box 
+    borderTop={`1px solid ${theme.borderColor} `}  bgColor={theme.bgColor} borderBottom={`1px solid ${theme.borderColor} `} ref={Project} pb={20}>
     <Text as={"h1"} color={theme.textcolor} mt={70} ml={70} mb={20} >Projects</Text>
     <Grid w="95%" templateColumns={isMobile?'repeat(1, 1fr)':'repeat(3, 1fr)'}  m={"auto"} color={theme.textcolor} gap={20} >
        
-        <Box border={`1px solid ${theme.borderColor}`}   bgColor={theme.bgColor}   p='15' borderEndColor={"blue"} borderBlockStartColor={"blue"}>
-            <Box as={motion.div} whileHover={{scale:1.1, border:`2px solid ${theme.borderColor}`}} >
+        <Box 
+        as={motion.div}
+        initial={{x:"10px",opacity:0 ,scale:0.8}}
+        viewport={{ once: false }}
+        whileInView={{x:0,opacity:1,scale:1 ,}}
+        transition={{ delay:1.8,duration:1}}
+        border={`1px solid ${theme.borderColor}`}   bgColor={theme.bgColor}   p='15' borderEndColor={"blue"} borderBlockStartColor={"blue"}>
+            <Box >
             <Image src={cultfit} w={"100%"}/>
             </Box>
             <Flex justifyContent={"space-around"} alignItems={"center"}>
                 <Box>
-                <Text as={"b"} color={"red"} fontSize={30}>Cult.fit</Text>
+                <Text as={"b"} color={"#72F2B4"} fontSize={30}>Cult.fit</Text>
                 </Box>
                 <Box>
-                    <Link href="https://astounding-scone-73c2d5.netlify.app/"><FcLink size={40} m={2} /></Link>
+                    <Link href="https://astounding-scone-73c2d5.netlify.app/" isExternal><FcLink size={40} m={6} /></Link>
                     
-                   <Link href="https://github.com/aakashindoriya/acrid-land-8684" > <AiFillGithub size={40} m={2} /></Link>
+                   <Link href="https://github.com/aakashindoriya/acrid-land-8684" isExternal> <AiFillGithub size={40} m={2} /></Link>
                 </Box>
                 
             </Flex>
@@ -44,14 +51,14 @@ return (
                 <ListItem>
                 <Flex alignItems={"center"} gap={2} >
                 <GiTechnoHeart size={30}/>
-                <Text fontSize='sm' as={"b"}><Text fontSize='20px' as={"b"} color={"red"} >Tech Stack :</Text><br/>• Java-Script<br/>• HTML<br/>• CSS</Text>
+                <Text fontSize='sm' as={"b"}><Text fontSize='20px' as={"b"} color={"#72F2B4"} >Tech Stack :</Text><br/>• Java-Script<br/>• HTML<br/>• CSS</Text>
                  </Flex>
                  <Divider />
                 </ListItem>
                 <ListItem>
                 <Flex alignItems={"center"} gap={2} >
                 <FcGraduationCap size={70}/>
-                <Text fontSize='sm' as={"b"}><Text fontSize='20px' as={"b"} color={"red"} >Area of responsibility :</Text> Worked as team lead , executed in under one week, with a team of 5, I performed Navbar / Location / Care-Page </Text>
+                <Text fontSize='sm' as={"b"}><Text fontSize='20px' as={"b"} color={"#72F2B4"} >Area of responsibility :</Text> Worked as team lead , executed in under one week, with a team of 5, I performed Navbar / Location / Care-Page </Text>
                  </Flex>
                  <Divider />
                 </ListItem>
@@ -64,18 +71,24 @@ return (
        
 
 
-        <Box border={`1px solid ${theme.borderColor}`} boxShadow='outline' p='20' rounded='md'  bgColor={theme.bgColor} borderEndColor={"blue"} borderBlockStartColor={"blue"}>
-        <Box as={motion.div} whileHover={{scale:1.1, border:`2px solid ${theme.borderColor}`}} >
+        <Box 
+        as={motion.div}
+        initial={{x:"10px",opacity:0 ,scale:0.8}}
+        viewport={{ once: false }}
+        whileInView={{x:0,opacity:1,scale:1 ,}}
+        transition={{ delay:1.8,duration:1}}
+        border={`1px solid ${theme.borderColor}`} boxShadow='outline' p='20' rounded='md'  bgColor={theme.bgColor} borderEndColor={"blue"} borderBlockStartColor={"blue"}>
+        <Box >
             <Image src={kfc} w={"100%"}/>
             </Box>
             <Flex justifyContent={"space-around"} alignItems={"center"}>
                 <Box>
-                <Text as={"b"} color={"red"} fontSize={30}>Kfc.com</Text>
+                <Text as={"b"} color={"#72F2B4"} fontSize={30}>Kfc.com</Text>
                 </Box>
                 <Box>
-                    <Link href="https://clonekfc-aakashindoriya.vercel.app/"><FcLink size={40} m={2} /></Link>
+                    <Link href="https://clonekfc-aakashindoriya.vercel.app/" isExternal><FcLink size={40} m={2} /></Link>
                     
-                   <Link href="https://github.com/aakashindoriya/polite-teeth-64/tree/main/clonekfc" > <AiFillGithub size={40} m={2} /></Link>
+                   <Link href="https://github.com/aakashindoriya/polite-teeth-64/tree/main/clonekfc" isExternal > <AiFillGithub size={40} m={2} /></Link>
                 </Box>
                 
             </Flex>
@@ -92,14 +105,14 @@ return (
                 <Flex alignItems={"center"} gap={2} >
                 <GiTechnoHeart size={30}/>
                     
-                <Text fontSize='sm' as={"b"}><Text fontSize='20px' as={"b"} color={"red"} >Tech Stack :</Text><br/>• React <br/>• React-router-dom <br/>• Chakra-UI<br/>• JSON Server <br/>• React-scroll</Text>
+                <Text fontSize='sm' as={"b"}><Text fontSize='20px' as={"b"} color={"#72F2B4"} >Tech Stack :</Text><br/>• React <br/>• React-router-dom <br/>• Chakra-UI<br/>• JSON Server <br/>• React-scroll</Text>
                  </Flex>
                  <Divider />
                 </ListItem>
                 <ListItem>
                 <Flex alignItems={"center"} gap={2} >
                 <FcGraduationCap size={70}/>
-                <Text fontSize='sm' as={"b"}><Text fontSize='20px' as={"b"} color={"red"} >Features :</Text><br/>• Users can signup/login<br/>
+                <Text fontSize='sm' as={"b"}><Text fontSize='20px' as={"b"} color={"#72F2B4"} >Features :</Text><br/>• Users can signup/login<br/>
                   • The menu page will automatically scroll to the user-selected category <br/>
                   • Users can add items to the cart and manage the quantity<br/>
                   • Users can not order without a login<br/></Text>
@@ -115,18 +128,24 @@ return (
 
 
 
-        <Box border={`1px solid ${theme.borderColor}`} boxShadow='outline' p='20' rounded='md'  bgColor={theme.bgColor} borderEndColor={"blue"} borderBlockStartColor={"blue"} >
-        <Box as={motion.div} whileHover={{scale:1.1, border:`2px solid ${theme.borderColor}`}} >
+        <Box 
+        as={motion.div}
+        initial={{x:"10px",opacity:0 ,scale:0.8}}
+        viewport={{ once: false }}
+        whileInView={{x:0,opacity:1,scale:1 ,}}
+        transition={{ delay:1.8,duration:1}}
+        border={`1px solid ${theme.borderColor}`} boxShadow='outline' p='20' rounded='md'  bgColor={theme.bgColor} borderEndColor={"blue"} borderBlockStartColor={"blue"} >
+        <Box  >
             <Image src={gearbest} w={"100%"}/>
             </Box>
             <Flex justifyContent={"space-around"} alignItems={"center"}>
                 <Box>
-                <Text as={"b"} color={"red"} fontSize={30}>Gearbest.com</Text>
+                <Text as={"b"} color={"#72F2B4"} fontSize={30}>Gearbest.com</Text>
                 </Box>
                 <Box>
-                    <Link href="https://various-skirt-2667.vercel.app/"><FcLink size={40} m={2} /></Link>
+                    <Link href="https://various-skirt-2667.vercel.app/" isExternal><FcLink size={40} m={2} /></Link>
                     
-                   <Link href="https://github.com/aakashindoriya/various-skirt-2667" > <AiFillGithub size={40} m={2} /></Link>
+                   <Link href="https://github.com/aakashindoriya/various-skirt-2667" isExternal> <AiFillGithub size={40} m={2} /></Link>
                 </Box>
                 
             </Flex>
@@ -142,14 +161,14 @@ return (
                 <ListItem>
                 <Flex alignItems={"center"} gap={2} >
                 <GiTechnoHeart size={30}/>
-                <Text fontSize='sm' as={"b"}><Text fontSize='20px' as={"b"} color={"red"} >Tech Stack :</Text><br/>• React <br/>• React-router-dom <br/>• Chakra-UI<br/>• JSON-Server</Text>
+                <Text fontSize='sm' as={"b"}><Text fontSize='20px' as={"b"} color={"#72F2B4"} >Tech Stack :</Text><br/>• React <br/>• React-router-dom <br/>• Chakra-UI<br/>• JSON-Server</Text>
                  </Flex>
                  <Divider />
                 </ListItem>
                 <ListItem>
                 <Flex alignItems={"center"} gap={2} >
                 <FcGraduationCap size={70}/>
-                <Text fontSize='sm' as={"b"}><Text fontSize='20px' as={"b"} color={"red"} >Features :</Text><br/>• Users can signup/login .user can select an item that will lead to a different page
+                <Text fontSize='sm' as={"b"}><Text fontSize='20px' as={"b"} color={"#72F2B4"} >Features :</Text><br/>• Users can signup/login .user can select an item that will lead to a different page
                   <br/>• Page information gets tracked by URL
                   <br/>• Users can add items to the cart and manage the quantity
                   <br/>• Users can not order without a login</Text>
@@ -166,18 +185,24 @@ return (
 
 
 
-        <Box border={`1px solid ${theme.borderColor}`} boxShadow='outline' p='20' rounded='md'  bgColor={theme.bgColor} borderEndColor={"blue"} borderBlockStartColor={"blue"}>
-        <Box as={motion.div} whileHover={{scale:1.1, border:`2px solid ${theme.borderColor}`}} >
+        <Box 
+       as={motion.div}
+       initial={{x:"10px",opacity:0 ,scale:0.8}}
+       viewport={{ once: false }}
+       whileInView={{x:0,opacity:1,scale:1 ,}}
+       transition={{ delay:1.8,duration:1}}
+        border={`1px solid ${theme.borderColor}`} boxShadow='outline' p='20' rounded='md'  bgColor={theme.bgColor} borderEndColor={"blue"} borderBlockStartColor={"blue"}>
+        <Box  >
             <Image src={ssens} w={"100%"}/>
             </Box>
             <Flex justifyContent={"space-around"} alignItems={"center"}>
                 <Box>
-                <Text as={"b"} color={"red"} fontSize={30}>Ssense.com</Text>
+                <Text as={"b"} color={"#72F2B4"} fontSize={30}>Ssense.com</Text>
                 </Box>
                 <Box>
-                    <Link href="https://suraj-996.github.io/ssense_unit2_project/"><FcLink size={40} m={2} /></Link>
+                    <Link href="https://suraj-996.github.io/ssense_unit2_project/" isExternal><FcLink size={40} m={2} /></Link>
                     
-                   <Link href="https://github.com/suraj-996/ssense_unit2_project" > <AiFillGithub size={40} m={2} /></Link>
+                   <Link href="https://github.com/suraj-996/ssense_unit2_project" isExternal > <AiFillGithub size={40} m={2} /></Link>
                 </Box>
                 
             </Flex>
@@ -193,14 +218,14 @@ return (
                 <ListItem>
                 <Flex alignItems={"center"} gap={2} >
                 <GiTechnoHeart size={30}/>
-                  <Text fontSize='sm' as={"b"}><Text fontSize='20px' as={"b"} color={"red"} >Tech Stack :</Text> <br/>• HTML <br/>• CSS <br/>• LocalStorage <br/>• Java-Script</Text>
+                  <Text fontSize='sm' as={"b"}><Text fontSize='20px' as={"b"} color={"#72F2B4"}>Tech Stack :</Text> <br/>• HTML <br/>• CSS <br/>• LocalStorage <br/>• Java-Script</Text>
                  </Flex>
                  <Divider />
                 </ListItem>
                 <ListItem>
                 <Flex alignItems={"center"} gap={2} >
                 <FcGraduationCap size={70}/>
-                <Text fontSize='sm' as={"b"}><Text fontSize='20px' as={"b"} color={"red"} >Area of responsibility :</Text> Executed in under one week,  with a team of 5, I performed homePage & fotter</Text>
+                <Text fontSize='sm' as={"b"}><Text fontSize='20px' as={"b"} color={"#72F2B4"} >Area of responsibility :</Text> Executed in under one week,  with a team of 5, I performed homePage & fotter</Text>
                  </Flex>
                  <Divider />
                 </ListItem>
