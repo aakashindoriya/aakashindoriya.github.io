@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.a576f8e5.js",
+    "main.js": "/static/js/main.62dbcfdc.js",
     "static/js/787.d2a5bcc5.chunk.js": "/static/js/787.d2a5bcc5.chunk.js",
     "static/media/kfc.png": "/static/media/kfc.776dbead45fc0b02b33e.png",
     "static/media/cultfit.png": "/static/media/cultfit.5a776a16dfa322c332ba.png",
     "static/media/gearbest.png": "/static/media/gearbest.936a3bb18ae574db747f.png",
     "static/media/ssens.png": "/static/media/ssens.8b5c027e97267d08cc5d.png",
-    "static/media/Aakash_Indoriya_Resume.pdf": "/static/media/Aakash_Indoriya_Resume.79bc513087ba7074619c.pdf",
+    "static/media/Aakash_Indoriya_Resume.pdf": "/static/media/Aakash_Indoriya_Resume.a53f958e84edba53b094.pdf",
     "static/media/wp8903994-mern-stack-wallpapers.png": "/static/media/wp8903994-mern-stack-wallpapers.d6c30e2209750064626f.png",
     "static/media/darkwall.png": "/static/media/darkwall.615383da7939441bf11f.png",
     "static/media/Snapchat-1231045421-removebg-preview.png": "/static/media/Snapchat-1231045421-removebg-preview.ab2b075214b1d70c04e8.png",
     "index.html": "/index.html",
     "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.a576f8e5.js.map": "/static/js/main.a576f8e5.js.map",
+    "main.62dbcfdc.js.map": "/static/js/main.62dbcfdc.js.map",
     "787.d2a5bcc5.chunk.js.map": "/static/js/787.d2a5bcc5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.a576f8e5.js"
+    "static/js/main.62dbcfdc.js"
   ]
 }
