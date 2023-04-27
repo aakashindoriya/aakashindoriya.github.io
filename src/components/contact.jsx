@@ -23,7 +23,7 @@ export default function Contact(){
                 whileHover={{scale:1.1,color:"red"}}
                 >
                   <GoMarkGithub size={50} />
-                  <Link href="https://github.com/aakashindoriya"> <Text as={"b"} fontSize={"2xl"} >aakashindoriya<AiOutlineLink mx='2px' /></Text></Link>
+                  <Link id="contact-github" href="https://github.com/aakashindoriya" isExternal> <Text as={"b"} fontSize={"2xl"} >aakashindoriya<AiOutlineLink mx='2px' /></Text></Link>
                 </Flex>
                 <Flex alignItems={"center"} gap={20} 
                 
@@ -35,7 +35,7 @@ export default function Contact(){
                 whileHover={{scale:1.1,color:"red"}}
                 >
                   <MdEmail size={50} />
-                <Text as={"b"} fontSize={"2xl"} >aakashindoriya12346@gmail.com</Text>
+                <Text as={"b"} fontSize={"2xl"}  id="contact-email">aakashindoriya12346@gmail.com</Text>
                 </Flex>
                 
                 <Flex alignItems={"center"} gap={20}
@@ -47,7 +47,7 @@ export default function Contact(){
                 whileHover={{scale:1.1,color:"red"}}
                 >
                   <FiLinkedin size={50} />
-                  <Link  href="https://www.linkedin.com/in/aakashindoriya/" isExternal><Text as={"b"} fontSize={"2xl"} >Aakash Indoriya</Text></Link>
+                  <Link  href="https://www.linkedin.com/in/aakashindoriya/" isExternal id="contact-linkedin"><Text as={"b"} fontSize={"2xl"} >Aakash Indoriya</Text></Link>
                 </Flex>
                 
                 <Flex alignItems={"center"} gap={20}
@@ -59,7 +59,7 @@ export default function Contact(){
                 whileHover={{scale:1.1,color:"red"}}
                 >
                   <AiOutlinePhone size={50} />
-                <Text as={"b"} fontSize={"2xl"} >+91-7014440217</Text>
+                <Text as={"b"} fontSize={"2xl"} id="contact-phone" >+91-7014440217</Text>
                 </Flex>
                 <Flex alignItems={"center"} gap={20}
                 as={motion.div} 
