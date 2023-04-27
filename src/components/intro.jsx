@@ -32,14 +32,14 @@ export default function Intro(){
             
                 <Flex flexDirection={isMobile?"column":"row"}justifyContent={isMobile?"space-between":"space-around"}  >
                     <Box  w={isMobile?"90%":"43%"}  filter='auto' brightness='90%'>
-                    <Box display={"flex"}><Text as={"h1"} fontSize="40px" color="white">Hello,I'm Aakash </Text><motion.h1 
+                    <Box display={"flex"}><Text as={"h1"} fontSize="40px" color="white" id="user-detail-name">Hello,I'm Aakash </Text><motion.h1 
                     initial={{rotateZ:"-50deg"}}
                     animate={{rotateZ:"0deg"}}
                     transition={{repeat:10,duration:0.3}}
                     
                     >👋</motion.h1></Box>
                     <TypinText paragraph={"A MERN Stack Web Devloper"} />
-                    <Text  as={isMobile?"h5":"h3"} color="white">Passionate Full-Stack Developer and hands-on experience in developing scalable websites using a wide range of Front-end and Back-end skills like Mongo-DB, CSS, JavaScript,Node Js, React,Express and knowledge of Data Structures and Algorithms(DSA)</Text>
+                    <Text  as={isMobile?"h5":"h3"} color="white" id="user-detail-intro">Passionate Full-Stack Developer and hands-on experience in developing scalable websites using a wide range of Front-end and Back-end skills like Mongo-DB, CSS, JavaScript,Node Js, React,Express and knowledge of Data Structures and Algorithms(DSA)</Text>
                     </Box>
                     <motion.div
                     initial={{x:20,opacity:0}}
@@ -49,7 +49,7 @@ export default function Intro(){
                     >
                     <Center>
                     <Box border={`2px solid ${theme.borderColor}`} boxShadow='dark-lg' p='6' rounded='md' bg={theme.bgColor} borderRadius="10%">
-                        <Image  src={Profile} borderRadius="10%" m={"auto"}/>
+                        <Image  className="home-img" src={Profile} borderRadius="10%" m={"auto"}/>
                     </Box>
                    
                     </Center>
