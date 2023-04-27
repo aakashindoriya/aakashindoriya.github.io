@@ -26,7 +26,7 @@ export default function Navbar(){
             stiffness:130
         }}
         >
-            <Box  borderBottom={"2px solid gray"} >
+            <Box  borderBottom={"2px solid gray"} id="nav-menu">
             <Flex justify={"space-between"} h={"80px"} alignItems={"center"}  >
                 <Box h={"70px"} display="flex" alignItems={"center"} gap={20} >
                     <Image src="https://logos.textgiraffe.com/logos/logo-name/Akash-designstyle-boots-m.png" h={"100%"} mr={10} />
@@ -39,13 +39,13 @@ export default function Navbar(){
                 {isMobile?<Box mr={10}><DrawerExample /></Box>:<Box  w="50%" >
                  <Flex w="100%" justifyContent={"space-evenly"}>
                     
-                 <Button as={motion.div} whileHover={{scale:1.2 ,color:"teal"}} bgColor={"transparent"} border="none" size={"md"}><Text as={"b"} color={theme.textcolor}  onClick={()=>executeScroll("home")}>ABOUT</Text></Button>
-                 <Button as={motion.div} whileHover={{scale:1.2 ,color:"teal"}} bgColor={"transparent"} border="none" size={"md"}><Text as={"b"}  color={theme.textcolor} onClick={()=>executeScroll("skill")}>SKILLS</Text></Button>
-                 <Button as={motion.div} whileHover={{scale:1.2 ,color:"teal"}} bgColor={"transparent"} border="none" size={"md"}> <Text as={"b"}  color={theme.textcolor} onClick={()=>executeScroll("project")}>PROJECTS</Text></Button>
-                 <Button as={motion.div} whileHover={{scale:1.2 ,color:"teal"}} bgColor={"transparent"} border="none" size={"md"}><Text as={"b"}  color={theme.textcolor}onClick={()=>executeScroll("contact")}>CONTACT</Text></Button>
+                 <Button className="nav-link about" as={motion.div} whileHover={{scale:1.2 ,color:"teal"}} bgColor={"transparent"} border="none" size={"md"}><Text as={"b"} color={theme.textcolor} className="nav-link home"  onClick={()=>executeScroll("home")}>ABOUT</Text></Button>
+                 <Button as={motion.div} whileHover={{scale:1.2 ,color:"teal"}} bgColor={"transparent"} border="none" size={"md"}><Text as={"b"}  color={theme.textcolor} className="nav-link skills"  onClick={()=>executeScroll("skill")}>SKILLS</Text></Button>
+                 <Button as={motion.div} whileHover={{scale:1.2 ,color:"teal"}} bgColor={"transparent"} border="none" size={"md"}> <Text as={"b"}  color={theme.textcolor} className="nav-link projects" onClick={()=>executeScroll("project")}>PROJECTS</Text></Button>
+                 <Button as={motion.div} whileHover={{scale:1.2 ,color:"teal"}} bgColor={"transparent"} border="none" size={"md"}><Text as={"b"}  color={theme.textcolor} className="nav-link contact" onClick={()=>executeScroll("contact")}>CONTACT</Text></Button>
                  <Button as={motion.div} whileHover={{scale:1.2 ,color:"teal"}} bgColor={"transparent"} border="none" size={"md"}><Text as={"b"}  color={theme.textcolor}>
                 
-                 <a href={require("../photos/Aakash_Indoriya_Resume.pdf")} download="myFile">RESUME</a>
+                 <a href={require("../photos/Aakash_Indoriya_Resume.pdf")} download="myFile" className="nav-link resume">RESUME</a>
                     
                     </Text></Button>
                  </Flex>
