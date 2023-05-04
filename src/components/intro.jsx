@@ -35,7 +35,7 @@ export default function Intro(){
             
                 <Flex flexDirection={isMobile?"column":"row"}justifyContent={isMobile?"space-between":"space-around"}  >
                     <Box  w={isMobile?"90%":"43%"}  filter='auto' brightness='90%'>
-                    <Box display={"flex"}><Text as={"h1"} fontSize="40px" color="white">Hello,I'm Aakash </Text><motion.h1 
+                    <Box display={"flex"}><Text as={"h1"} fontSize="40px" color="white" id="user-detail-name">Hello,I'm Aakash </Text><motion.h1 
                     initial={{rotateZ:"-50deg"}}
                     animate={{rotateZ:"0deg"}}
                     transition={{repeat:10,duration:0.3}}
@@ -52,7 +52,7 @@ export default function Intro(){
                     >
                     <Center>
                     <Box border={`2px solid ${theme.borderColor}`} boxShadow='dark-lg' p='6' rounded='md' bg={theme.bgColor} borderRadius="10%">
-                        <Image  src={Profile} borderRadius="10%" m={"auto"}/>
+                        <Image  className="home-img" src={Profile} borderRadius="10%" m={"auto"}/>
                     </Box>
                    
                     </Center>
