@@ -1,15 +1,230 @@
-.App {
+*{
+  box-sizing: border-box;
+}
+.navbar button {
+  border: none;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.89);
+  text-decoration: none;
+  font-size: larger;
+
+}
+.navbar button:hover{
+  scale: 1.1;
+  font-weight: bold;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 5%;
+  position: sticky;
+  top:0%;
+  z-index: 1000;
+  background-color: rgb(33, 36, 40);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.89);
+}
+.navbar:hover{
+  background-color: rgb(42, 46, 51);
+}
+.navbar-toggle{
+  display: none;
+}
+.navbar-right{
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-modal{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0%;
+  top:10%;
+  z-index: 1000;
+  width:100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  
+
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  z-index: 1000;
+  color:rgb(220, 221, 240);
+  font-family: 'Times New Roman', Times, serif;
+ 
+}
+
+.logo-animation {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+ 
+   
+}
+
+.logo-letter {
+  font-size: 3rem;
+  opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    animation-name: letter-fade-in;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes letter-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.logo-letter.hidden {
+  opacity: 0;
+}
+
+.logo-letter.animate {
+  opacity: 1;
+}
+
+#projects {
+  width: 100%;
+  color: white;
+  background-color: #282c34;
+  margin-top: 0%;
+  border-bottom: 2px solid white;
+  overflow: hidden;
+}
+#projects h3{
+ font-size: 35px;
+ padding: 0% 5%;
+ font-family: 'Times New Roman', Times, serif;
+}
+.projectCard{
+  width: 100%;
+  display: flex;
+  gap:2px;
+  position: relative;
+  height: 400px;
+  margin: auto;
+  font-family: 'Times New Roman', Times, serif
+}
+.projectCard>div{
+  width: 45%;
+  padding: 0.5%;
+  background-color: white;
+}
+.projectCard>div:first-child>img {
+  width: 100%;
+ 
+}
+.projectCard>div:nth-child(1){
+  position: absolute;
+  top:0%;
+  left:10%;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+.projectCard>div:nth-child(2) {
+  position: absolute;
+  min-height: 260px;
+  top: 10%;
+  left: 50%;
+  border:2px solid white;
+  color: #282c34;
+  border-radius: 10px;
+  background-image: url("https://img.freepik.com/free-photo/close-up-white-marble-texture-background_53876-63512.jpg?w=740&t=st=1683201373~exp=1683201973~hmac=bc7b45cb496f767341134ac2d457f2dc3b47074dc2ec0c3c13cc6e885070eb90");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  font-size: larger;
+  font-weight:400
+  
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#techavatar{
+  width: 40%;
+  margin: auto;
+  position: absolute;
+  bottom: -100%;
+  left: 50%;
+  transform: translate( -50%);
 }
+#links{
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+  position: absolute;
+  top:-8.5%;
+  left:35%
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+}
+@media (max-width: 768px) {
+  #techavatar {
+      width: 40%;
+      margin: auto;
+      position: static;
+    }
+  
+    #links {
+      display: flex;
+      justify-content: space-around;
+      position: static;
+    }
+  .projectCard{
+    width: 90%;
+    flex-direction: column;
+    gap:10%;
+    padding: 5% 1%;
+    position: static;
+    border-bottom: 2px solid white;
+    height:auto
+  }
+  .projectCard>div:nth-child(1){
+    width: 100%;
+    position: static;
+    border-radius: 0%;
+    border: none
+  }
+  .projectCard>div:nth-child(2){
+          position: static;
+              min-height: 300px;
+          width: 100%;
+          border-radius: 0%;
+        }
+  .navbar-right {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(33, 36, 40);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-modal button {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1rem;
   }
 }
 

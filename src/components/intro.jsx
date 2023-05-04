@@ -1,7 +1,6 @@
 import { Box, Center, Flex, Image, Text, useMediaQuery, } from "@chakra-ui/react";
 import Profile from "../photos/Snapchat-1231045421-removebg-preview.png";
 import {motion} from "framer-motion"
-import TypinText from "./typingText";
 import backround from "../photos/wp8903994-mern-stack-wallpapers.png"
 import dark from "../photos/darkwall.png"
 import { useContext } from "react";
@@ -10,7 +9,9 @@ export default function Intro(){
     const {theme,Home}=useContext(Theme)
     const [isMobile] = useMediaQuery("(max-width: 768px)")
     return(
-        <motion.div animate={{
+        <motion.div 
+         id="home"
+        animate={{
             opacity:1,
             
         }}
@@ -26,7 +27,9 @@ export default function Intro(){
         >
         
         <Box  p={10}   bgImage={theme.name==="dark"?dark:backround}   backgroundPosition="center"
-      backgroundRepeat="no-repeat">
+      backgroundRepeat="no-repeat"
+        id="about" className="about section"
+      >
             
             <Box  mt={60} mb={60} > 
             
@@ -38,7 +41,7 @@ export default function Intro(){
                     transition={{repeat:10,duration:0.3}}
                     
                     >👋</motion.h1></Box>
-                    <TypinText paragraph={"A MERN Stack Web Devloper"} />
+                    {/* <TypinText paragraph={"A MERN Stack Web Devloper"} /> */}
                     <Text  as={isMobile?"h5":"h3"} color="white">Passionate Full-Stack Developer and hands-on experience in developing scalable websites using a wide range of Front-end and Back-end skills like Mongo-DB, CSS, JavaScript,Node Js, React,Express and knowledge of Data Structures and Algorithms(DSA)</Text>
                     </Box>
                     <motion.div

@@ -11,7 +11,7 @@ export default function Contact(){
     console.log(theme.textcolor)
     const [isMobile] = useMediaQuery("(max-width: 768px)")
     return (
-        <Box bgColor={theme.bgColor} ref={Contact} borderTop={"2px solid"} borderTopColor={theme.borderColor} color={theme.textcolor} pt={20}>
+        <Box id="contact" bgColor={theme.bgColor} ref={Contact} borderTop={"2px solid"} borderTopColor={theme.borderColor} color={theme.textcolor} pt={20}>
             <Text ml="10%" as="b" fontSize={"30px"}>Contact</Text>
             <SimpleGrid columns={isMobile?[1, 1]:[2]}   gap={30} p={20} w="70%" m="auto" >
             <Flex alignItems={"center"} gap={20}

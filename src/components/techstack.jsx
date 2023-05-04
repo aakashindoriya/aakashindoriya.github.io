@@ -7,7 +7,7 @@ export default function TechStack (){
     let {theme,Skill}=useContext(Theme)
     const [isMobile] = useMediaQuery("(max-width: 768px)")
  return (
-    <Box  backgroundColor={theme.bgColor} pt="30px" w={"100%"} ref={Skill} >
+    <Box id="skills"  backgroundColor={theme.bgColor} pt="30px" w={"100%"} ref={Skill} >
          
     <Text  ml={60} as="h1" color={theme.textcolor} mt={50}>Tech Stack</Text>
     <Box borderTop={"2px solid gray"} borderBottom={"2px solid gray"} p={7}>
