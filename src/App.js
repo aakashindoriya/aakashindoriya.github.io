@@ -10,15 +10,19 @@ import Projects from './components/projects';
 import TechStack from './components/techstack';
 import WithSubnavigation from './components/NewNev';
 import Uprojects from './components/update/Uprojects';
+import TechStackNew from './components/update/TechStackNew';
+import ProfileNew from './components/update/ProfileNew';
+import Home from './components/update/Home';
 function App() {
   return (
     <div className='App'>
       {/* <Navbar /> */}
       <WithSubnavigation />
       <Box position={"sticky"} top={"80px"} w={"99.80%"} m={"auto"} >
-        <Intro />
-        <TechStack />
-        {/* <Projects /> */}
+        {/* <Intro /> */}
+        <Home />
+        <ProfileNew />
+        <TechStackNew />
         <Uprojects />
         <GithubCalender />
         <Contact />

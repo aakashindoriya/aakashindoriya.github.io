@@ -7,6 +7,7 @@ function TechStack({ stack }) {
     id="techavatar" spacing={-7} position="relative" top="-10px">
       {stack.map((tech, index) => (
         <Avatar
+        className="project-tech-stack"
          as={motion.div}
          initial={{scale:0.5,opacity:0}}
          animate={{scale:1,opacity:1}}

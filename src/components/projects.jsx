@@ -189,7 +189,7 @@ return (
        as={motion.div}
        initial={{x:"10px",opacity:0 ,scale:0.8}}
        viewport={{ once: false }}
-       whileInView={{x:0,opacity:1,scale:1 ,}}
+       whileInView={{x:0,opacity:1,scale:1 }}
        transition={{ delay:1.8,duration:1}}
         border={`1px solid ${theme.borderColor}`} boxShadow='outline' p='20' rounded='md'  bgColor={theme.bgColor} borderEndColor={"blue"} borderBlockStartColor={"blue"}>
         <Box  >

@@ -72,7 +72,7 @@ export default function Uprojects() {
             transition={{ delay:0.5,duration:0.5}}
 
             >
-                <motion.div 
+                <motion.div className="project-card"
                 initial={{zIndex:0,opacity:0.9}}
                 whileHover={{zIndex:[1,1.5,2,2.5,3],opacity:1}}
                 transition={{ duration:0.5}}
@@ -84,8 +84,8 @@ export default function Uprojects() {
                 whileInView={{x:0}}
                 transition={{delay:0.5,duration:1}}
                 >
-                    <h1>{e.title}</h1>
-                    <p>{e.description}</p>
+                    <h1 className='project-title'>{e.title}</h1>
+                    <p className='project-description'>{e.description}</p>
                      <TechStack stack={[...e.techStack]} />
                      <div id="links">
                         <Tooltip label="Live Link"
@@ -94,7 +94,7 @@ export default function Uprojects() {
                          borderRadius={"5%"}
                          fontWeight={"bold"}
                          >
-                        <Link href={e.live} isExternal><FcLink color='white'  size={50}  /></Link> 
+                        <Link className="project-deployed-link" href={e.live} isExternal><FcLink color='white'  size={50}  /></Link> 
                         </Tooltip>
                         <Tooltip label="Git-Hub Link"
                          bg="white" border={"1px solid white"}
@@ -102,7 +102,7 @@ export default function Uprojects() {
                          borderRadius={"5%"}
                          fontWeight={"bold"}
                          >
-                        <Link href={e.github} isExternal > <AiFillGithub color='blue'  size={50}  /></Link>
+                        <Link className="project-github-link" href={e.github} isExternal > <AiFillGithub color='blue'  size={50}  /></Link>
                          </Tooltip>
                      </div>
                 </motion.div>

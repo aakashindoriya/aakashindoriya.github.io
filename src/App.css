@@ -1,6 +1,60 @@
 *{
   box-sizing: border-box;
 }
+#parent{
+  position: relative;
+}
+#usefullinks{
+  width: 100%;
+  position: absolute;
+  display: flex;
+  gap:10px;
+  bottom: -12%;
+  left: 10%;
+  
+}
+#usefullinks a{
+ text-decoration: none;
+ color: white;
+}
+#usefullinks a:hover{
+  color: blue;
+}
+#usefullinks>div{
+box-shadow: rgba(12, 12, 51, 0.25) 0px 50px 100px -20px, rgba(78, 65, 65, 0.3) 0px 30px 60px -30px, rgba(122, 122, 124, 0.35) 0px -2px 6px 0px inset;
+  padding: 1% 2%;
+  border-radius: 10px;
+}
+#usefullinks>div:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(9, 122, 235, 0.35) 0px -2px 6px 0px inset;
+  color: rgb(129, 129, 238);
+  cursor: pointer;
+}
+#home{
+  display: flex;
+  padding: 1% 5%;
+  width: 100%;
+  gap:30px;
+  background-color: #282c34;
+  color: white;
+  font-size: 25px;
+  height: 400px;
+  align-items: center;
+
+}
+#home>div{
+  width: 45%;
+}
+#home img{
+  width: 100%;
+    border-radius: 10px;
+}
+#home p{
+  font-size: 55px;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(235, 231, 231);
+}
+
 .navbar button {
   border: none;
   background-color: transparent;
@@ -57,7 +111,52 @@
   font-family: 'Times New Roman', Times, serif;
  
 }
+#about{
+  width: 100%;
+  margin-top:-3% ;
+ background-color: #282c34;
+ color: white;
+  font-family: 'Times New Roman', Times, serif;
 
+}
+#about>div{
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  font-size: larger;
+}
+#about img{
+  width: 90%;
+  border-radius: 50%;
+}
+#about h3{
+  font-size: 35px;
+  padding: 0% 5%;
+  font-family: 'Times New Roman', Times, serif;
+}
+#skills{
+  padding-top:2%;
+  background-color: #282c34;
+  color: white;
+  font-weight: 400;
+}
+
+#skills h3{
+  font-size: 35px;
+  padding: 0% 5%;
+  font-family: 'Times New Roman', Times, serif;
+}
+#skills>div:nth-child(2){
+  width: 90%;
+  padding: 2% 2% 2% 2%;
+  display: grid;
+  margin: auto;
+  grid-template-columns: repeat(5,1fr);
+  gap:10px;
+}
+#skills>div>div {
+}
 .logo-animation {
   display: flex;
   align-items: center;
@@ -168,6 +267,31 @@
 
 }
 @media (max-width: 768px) {
+  #home{
+    flex-direction: column-reverse;
+    margin-bottom: -7.5%;
+  }
+    #home>div{
+      width: 100%;
+    }
+    #home p{
+      font-size: 20px;
+    }
+  #usefullinks{
+  
+    bottom:-5%;
+    left: 20%;
+  }
+  #parent{
+    width: 100%;
+  }
+  #skills>div:nth-child(2){
+    grid-template-columns: repeat(3,1fr);
+  }
+  #about>div{
+    flex-direction: column-reverse;
+    font-size: 14;
+  }
   #techavatar {
       width: 40%;
       margin: auto;

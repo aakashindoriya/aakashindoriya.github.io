@@ -40,9 +40,9 @@ export default function Intro(){
                     animate={{rotateZ:"0deg"}}
                     transition={{repeat:10,duration:0.3}}
                     
-                    >👋</motion.h1></Box>
+                    >👋</motion.h1></Box  >
                     {/* <TypinText paragraph={"A MERN Stack Web Devloper"} /> */}
-                    <Text  as={isMobile?"h5":"h3"} color="white">Passionate Full-Stack Developer and hands-on experience in developing scalable websites using a wide range of Front-end and Back-end skills like Mongo-DB, CSS, JavaScript,Node Js, React,Express and knowledge of Data Structures and Algorithms(DSA)</Text>
+                    <Text id="user-detail-intro"  as={isMobile?"h5":"h3"} color="white">Passionate Full-Stack Developer and hands-on experience in developing scalable websites using a wide range of Front-end and Back-end skills like Mongo-DB, CSS, JavaScript,Node Js, React,Express and knowledge of Data Structures and Algorithms(DSA)</Text>
                     </Box>
                     <motion.div
                     initial={{x:20,opacity:0}}
