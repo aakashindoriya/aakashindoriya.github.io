@@ -70,7 +70,7 @@ export default function Contact(){
                 whileHover={{scale:1.1,color:"red"}}
                 >
                   <AiOutlineFileImage size={50} />
-                <Link  href="https://drive.google.com/file/d/1Xf0rUjuZ6l0d375_uDfreeFO0zW5yd-W/view?usp=sharing" isExternal><Text as={"b"} fontSize={"2xl"} >My Resume</Text></Link>
+                <Link id="resume-link-2"  href="https://drive.google.com/file/d/1Xf0rUjuZ6l0d375_uDfreeFO0zW5yd-W/view?usp=sharing" isExternal><Text as={"b"} fontSize={"2xl"} >My Resume</Text></Link>
                 </Flex>
             </SimpleGrid>
         </Box>

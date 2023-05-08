@@ -5,7 +5,7 @@ import React from 'react'
 
 export default function ProfileNew() {
   return (
-    <div id='about'>
+    <div id='about' className='about section'>
         <h3>About Me</h3>
         <HStack  gap="20" m="auto" p="0% 5%" >
             <Box as={motion.div}
@@ -35,6 +35,7 @@ export default function ProfileNew() {
               initial={{scale:0.9,opacity:0.7,boxShadow:"none"}}
               whileInView={{scale:1,opacity:1,boxShadow:"rgba(224, 224, 228, 0.25) 0px 50px 100px -20px, rgba(255, 165, 165, 0.3) 0px 30px 60px -30px, rgba(112, 183, 255, 0.35) 0px -2px 6px 0px inset"}}
               transition={{duration:1}}
+              className="home-img"
               src="https://avatars.githubusercontent.com/u/37771235?v=4" />
             </Box>
        </HStack>

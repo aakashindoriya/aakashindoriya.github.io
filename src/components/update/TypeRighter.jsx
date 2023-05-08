@@ -42,7 +42,7 @@ const Typewriter = () => {
 
   return (
     <div>
-      <p>{typing}</p>
+      <p id="user-detail-name">{typing}</p>
     </div>
   );
 };

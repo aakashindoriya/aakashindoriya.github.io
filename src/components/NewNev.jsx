@@ -64,7 +64,7 @@ function Navbar() {
         <button  onClick={()=>{HandleScroll("contact")
       closeMenu()
       }}>Contact</button>
-        <a href={require("../photos/Aakash_Indoriya_Resume.pdf")} download="myFile" onClick={closeMenu}>
+        <a id="resume-link-1" href={require("../photos/Aakash_Indoriya_Resume.pdf")} download="myFile" onClick={closeMenu}>
           Resume
         </a>
         </div>
