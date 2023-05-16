@@ -43,7 +43,7 @@ function Navbar() {
         <button  className="nav-link about" onClick={()=>HandleScroll("about")}>About</button>
         <button className="nav-link skills" onClick={()=>HandleScroll("skills")}>Skills</button>
         <button   className="nav-link contact" onClick={()=>HandleScroll("contact")}>Contact</button>
-        <a class="nav-link resume" href={require("../photos/Aakash_Indoriya_Resume.pdf")} download="myFile" >
+        <a class="nav-link resume"  id="resume-button-1" href={require("../photos/Aakash_Indoriya_Resume.pdf")} download="myFile" >
           Resume
         </a>
       </div>

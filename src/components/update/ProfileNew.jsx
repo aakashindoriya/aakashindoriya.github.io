@@ -28,6 +28,10 @@ export default function ProfileNew() {
                   <div>
                    <a href='mailto:aakashindoriya12346@gmail.com'><AiOutlineMail size={"40px"}/> </a>
                   </div>
+                  <div>
+             <a id="resume-button-2" href={require("../../photos/Aakash_Indoriya_Resume.pdf")} download="myFile" >
+          Resume
+        </a>                  </div>
                  </div>
             </Box>
             <Box id="image" w="40%">

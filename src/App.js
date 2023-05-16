@@ -13,10 +13,12 @@ import Uprojects from './components/update/Uprojects';
 import TechStackNew from './components/update/TechStackNew';
 import ProfileNew from './components/update/ProfileNew';
 import Home from './components/update/Home';
+import Cuser from './components/update/Mouse/Cuser';
 function App() {
   return (
     <div className='App'>
-      {/* <Navbar /> */}
+
+      <Cuser />
       <WithSubnavigation />
       <Box position={"sticky"} top={"80px"} w={"99.80%"} m={"auto"} >
         {/* <Intro /> */}

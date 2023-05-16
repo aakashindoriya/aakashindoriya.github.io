@@ -66,25 +66,23 @@ export default function Uprojects() {
         <div>
         { 
             projects.map((e,index)=>
-            <motion.div className='projectCard' 
-            initial={{opacity:0}}
-            whileInView={{opacity:1}}
-            transition={{ delay:0.5,duration:0.5}}
+            <motion.div className="project-card" 
 
             >
-                <motion.div className="project-card"
-                initial={{zIndex:0,opacity:0.9}}
+                <motion.div 
+                initial={{zIndex:0,opacity:0.9,x:-100}}
+                whileInView={{x:0}}
                 whileHover={{zIndex:[1,1.5,2,2.5,3],opacity:1}}
-                transition={{ duration:0.5}}
+                transition={{type:"spring",mass:2}}
                 style={{zIndex:active?3:0,transition: 'z-index 1s ease-in-out'}}>
                     <img src={e.image} onMouseEnter={()=>setActive(true)} onMouseLeave={()=>setActive(false)} />
                 </motion.div>
                 <motion.div style={{zIndex:1}}
-                initial={{x:3}}
+                initial={{x:100}}
                 whileInView={{x:0}}
-                transition={{delay:0.5,duration:1}}
+                transition={{type:"spring",mass:2}}
                 >
-                    <h1 className='project-title'>{e.title}</h1>
+                    <h1 className='.project-title'>{e.title}</h1>
                     <p className='project-description'>{e.description}</p>
                      <TechStack stack={[...e.techStack]} />
                      <div id="links">

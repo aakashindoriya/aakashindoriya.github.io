@@ -63,9 +63,9 @@ export default function TechStackNew() {
             {
             skills.map((e)=><VStack className="skills-card">
                 <Avatar as={motion.div} 
-                initial={{scale:0.8,rotateZ:90}}
-                whileInView={{scale:1,rotateZ:0}}
-                transition={{duration:1}}
+                initial={{scale:0.8,rotateZ:90,x:2}}
+                whileInView={{scale:1,rotateZ:0,x:0}}
+                transition={{type:"spring",mass:30}}
                 className="skills-card-img"
                 src={e.img} alignContent={"center"}  width={"70px"} h="70px"  bg="white" border={"2px solid white"} borderRadius={"50%"} />
                 <Text className="skills-card-name">{e.name}</Text>

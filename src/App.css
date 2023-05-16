@@ -16,6 +16,9 @@
 #usefullinks a{
  text-decoration: none;
  color: white;
+ margin: auto; 
+ 
+
 }
 #usefullinks a:hover{
   color: blue;
@@ -24,6 +27,9 @@
 box-shadow: rgba(12, 12, 51, 0.25) 0px 50px 100px -20px, rgba(78, 65, 65, 0.3) 0px 30px 60px -30px, rgba(122, 122, 124, 0.35) 0px -2px 6px 0px inset;
   padding: 1% 2%;
   border-radius: 10px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 #usefullinks>div:hover{
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(9, 122, 235, 0.35) 0px -2px 6px 0px inset;
@@ -204,7 +210,7 @@ box-shadow: rgba(12, 12, 51, 0.25) 0px 50px 100px -20px, rgba(78, 65, 65, 0.3) 0
  padding: 0% 5%;
  font-family: 'Times New Roman', Times, serif;
 }
-.projectCard{
+.project-card{
   width: 100%;
   display: flex;
   gap:2px;
@@ -213,23 +219,23 @@ box-shadow: rgba(12, 12, 51, 0.25) 0px 50px 100px -20px, rgba(78, 65, 65, 0.3) 0
   margin: auto;
   font-family: 'Times New Roman', Times, serif
 }
-.projectCard>div{
+.project-card>div{
   width: 45%;
   padding: 0.5%;
   background-color: white;
 }
-.projectCard>div:first-child>img {
+.project-card>div:first-child>img {
   width: 100%;
  
 }
-.projectCard>div:nth-child(1){
+.project-card>div:nth-child(1){
   position: absolute;
   top:0%;
   left:10%;
   border: 2px solid white;
   border-radius: 10px;
 }
-.projectCard>div:nth-child(2) {
+.project-card>div:nth-child(2) {
   position: absolute;
   min-height: 260px;
   top: 10%;
@@ -266,7 +272,13 @@ box-shadow: rgba(12, 12, 51, 0.25) 0px 50px 100px -20px, rgba(78, 65, 65, 0.3) 0
   left:35%
 
 }
+#avtar{
+  width: 50px;
+}
 @media (max-width: 768px) {
+  #avtar {
+      width: 30px;
+    }
   #home{
     flex-direction: column-reverse;
     margin-bottom: -7.5%;
@@ -280,7 +292,7 @@ box-shadow: rgba(12, 12, 51, 0.25) 0px 50px 100px -20px, rgba(78, 65, 65, 0.3) 0
   #usefullinks{
   
     bottom:-5%;
-    left: 20%;
+    left: 10%;
   }
   #parent{
     width: 100%;
@@ -303,7 +315,7 @@ box-shadow: rgba(12, 12, 51, 0.25) 0px 50px 100px -20px, rgba(78, 65, 65, 0.3) 0
       justify-content: space-around;
       position: static;
     }
-  .projectCard{
+  .project-card{
     width: 90%;
     flex-direction: column;
     gap:10%;
@@ -312,13 +324,13 @@ box-shadow: rgba(12, 12, 51, 0.25) 0px 50px 100px -20px, rgba(78, 65, 65, 0.3) 0
     border-bottom: 2px solid white;
     height:auto
   }
-  .projectCard>div:nth-child(1){
+  .project-card>div:nth-child(1){
     width: 100%;
     position: static;
     border-radius: 0%;
     border: none
   }
-  .projectCard>div:nth-child(2){
+  .project-card>div:nth-child(2){
           position: static;
               min-height: 300px;
           width: 100%;
