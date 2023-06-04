@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a737aa64.css",
-    "main.js": "/static/js/main.f433e4f4.js",
+    "main.css": "/static/css/main.476f3077.css",
+    "main.js": "/static/js/main.801629e9.js",
     "static/js/787.d2a5bcc5.chunk.js": "/static/js/787.d2a5bcc5.chunk.js",
     "static/media/kfc.png": "/static/media/kfc.776dbead45fc0b02b33e.png",
     "static/media/cultfit.png": "/static/media/cultfit.5a776a16dfa322c332ba.png",
@@ -12,12 +12,12 @@
     "static/media/darkwall.png": "/static/media/darkwall.615383da7939441bf11f.png",
     "static/media/Snapchat-1231045421-removebg-preview.png": "/static/media/Snapchat-1231045421-removebg-preview.ab2b075214b1d70c04e8.png",
     "index.html": "/index.html",
-    "main.a737aa64.css.map": "/static/css/main.a737aa64.css.map",
-    "main.f433e4f4.js.map": "/static/js/main.f433e4f4.js.map",
+    "main.476f3077.css.map": "/static/css/main.476f3077.css.map",
+    "main.801629e9.js.map": "/static/js/main.801629e9.js.map",
     "787.d2a5bcc5.chunk.js.map": "/static/js/787.d2a5bcc5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a737aa64.css",
-    "static/js/main.f433e4f4.js"
+    "static/css/main.476f3077.css",
+    "static/js/main.801629e9.js"
   ]
 }
