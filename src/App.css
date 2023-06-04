@@ -1,6 +1,8 @@
 #mainroot{
   max-width: 100vw;
   box-sizing: border-box;
+  border:2px solid #282c34;
+  padding: 0.2%;
 }
 #parent{
  
@@ -39,29 +41,41 @@ box-shadow: rgba(12, 12, 51, 0.25) 0px 50px 100px -20px, rgba(78, 65, 65, 0.3) 0
   cursor: pointer;
 }
 #home{
-  display: flex;
-  padding: 1% 5%;
-  max-width: 100vw;
+  padding: 3% 5%;
+  max-width: 100%;
   gap:30px;
   background-color: #282c34;
   color: white;
-  font-size: 25px;
   height: 400px;
-  align-items: center;
+  margin: auto;
+    position: relative;
 
 }
-#home>div{
-  width: 45%;
+#home>div:first-child{
+  width: 90%;
+  height: 350px;
+  margin: auto;
+
+}
+#home>div:nth-child(2){
+  width: 67vw;
+  position: absolute;
+  bottom: 50%;
+  left: 20vw;
+  color:rgb(131, 128, 240);
+  opacity: 1.5;
+  text-shadow:2px 2px #38393b;
+  
 }
 #home img{
+  opacity: 1;
   width: 100%;
-    border-radius: 10px;
+  height: 100%;
+  border-radius: 10px;
+  filter: blur(2px);
+    -webkit-filter: blur(1px)
 }
-#home p{
-  font-size: 55px;
-  font-family: 'Times New Roman', Times, serif;
-  color: rgb(235, 231, 231);
-}
+
 
 .navbar button {
   border: none;
@@ -228,6 +242,7 @@ box-shadow: rgba(12, 12, 51, 0.25) 0px 50px 100px -20px, rgba(78, 65, 65, 0.3) 0
 }
 .project-card>div:first-child>img {
   width: 100%;
+  min-height: 350px;
  
 }
 .project-card>div:nth-child(1){
@@ -239,7 +254,7 @@ box-shadow: rgba(12, 12, 51, 0.25) 0px 50px 100px -20px, rgba(78, 65, 65, 0.3) 0
 }
 .project-card>div:nth-child(2) {
   position: absolute;
-  min-height: 260px;
+  min-height: 150px;
   top: 10%;
   left: 50%;
   border:2px solid white;
@@ -248,13 +263,12 @@ box-shadow: rgba(12, 12, 51, 0.25) 0px 50px 100px -20px, rgba(78, 65, 65, 0.3) 0
   background-image: url("https://img.freepik.com/free-photo/close-up-white-marble-texture-background_53876-63512.jpg?w=740&t=st=1683201373~exp=1683201973~hmac=bc7b45cb496f767341134ac2d457f2dc3b47074dc2ec0c3c13cc6e885070eb90");
   background-repeat: no-repeat;
   background-size: cover;
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  padding: 2% 1%;
   text-align: center;
   font-size: larger;
   font-weight:400
+  
   
 }
 #techavatar{
@@ -278,6 +292,10 @@ box-shadow: rgba(12, 12, 51, 0.25) 0px 50px 100px -20px, rgba(78, 65, 65, 0.3) 0
   width: 50px;
 }
 @media (max-width: 768px) {
+  #home>div:nth-child(2) {
+    left: 10%;
+    top:40%
+  }
   #avtar {
       width: 30px;
     }

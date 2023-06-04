@@ -43,6 +43,23 @@ export default function Uprojects() {
         "Zara is a Spanish multi-national retail clothing chain. It specialises in fast fashion, and sells clothing, accessories, shoes, beauty products and perfumes",
     },
     {
+      title: "BUYC",
+      image:
+        "https://user-images.githubusercontent.com/37771235/243163317-ae440d5b-9ce0-410c-860d-b6162e65113f.png",
+      techStack: [
+        "https://cdn1.iconfinder.com/data/icons/unicons-line-vol-5/24/react-256.png",
+        "https://avatars.githubusercontent.com/u/54212428?s=280&v=4",
+        "https://cdn.iconscout.com/icon/free/png-512/free-redux-3445829-2878755.png?f=avif&w=256",
+        "https://cdn.iconscout.com/icon/free/png-512/free-mongodb-4-1175139.png?f=avif&w=256",
+        "https://cdn.iconscout.com/icon/free/png-512/free-nodejs-2-226035.png?f=avif&w=256",
+        "https://cdn.iconscout.com/icon/free/png-512/free-express-8-1175029.png?f=avif&w=256",
+      ],
+      github: "https://github.com/aakashindoriya/BUYC-Corp",
+      live: "buyc-client-aakashindoriya.vercel.app/",
+      description:
+        "This platform allows users to add OEMs and cars for sale. Admin credentials are required to create OEM users. Sellers can add, edit, and delete cars, while all users can browse available cars on the home page.",
+    },
+    {
       title: "Short It Out",
       image:
         "https://user-images.githubusercontent.com/37771235/218397436-9a2e94c6-3a1d-4cf1-b749-0921ea269764.png",

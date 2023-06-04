@@ -1,5 +1,5 @@
 .large_circle,
-.small_circle {
+.small_circle,.smallest_circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -14,4 +14,9 @@
     width: 16px;
     height: 16px;
     background-color: rgb(51, 51, 51);
+}
+.smallest_circle {
+    width: 8px;
+    height: 8px;
+    background-color: rgb(212, 112, 112);
 }
