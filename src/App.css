@@ -55,6 +55,7 @@ box-shadow: rgba(12, 12, 51, 0.25) 0px 50px 100px -20px, rgba(78, 65, 65, 0.3) 0
   width: 90%;
   height: 350px;
   margin: auto;
+  
 
 }
 #home>div:nth-child(2){
@@ -153,9 +154,18 @@ box-shadow: rgba(12, 12, 51, 0.25) 0px 50px 100px -20px, rgba(78, 65, 65, 0.3) 0
   border-radius: 50%;
 }
 #about h3{
-  font-size: 35px;
+  font-size: 33px;
   padding: 0% 5%;
   font-family: 'Times New Roman', Times, serif;
+  
+}
+#user-detail-intro{
+  font-size: 24px;
+  padding: 0% 5%;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 100;
+  line-height: 1.2;
+  margin-bottom: 4;
 }
 #skills{
   padding-top:2%;
@@ -292,9 +302,21 @@ box-shadow: rgba(12, 12, 51, 0.25) 0px 50px 100px -20px, rgba(78, 65, 65, 0.3) 0
   width: 50px;
 }
 @media (max-width: 768px) {
+  #home{
+    position:static;
+    
+  }
+  #about{
+    margin-top: 30px;
+    border:3px solid transparent
+  }
   #home>div:nth-child(2) {
-    left: 10%;
-    top:40%
+    position:static;
+    width: 100vw;
+    font-size: small;
+  color:rgb(131, 128, 240);
+  opacity: 1.5;
+  text-shadow:2px 2px #38393b;
   }
   #avtar {
       width: 30px;

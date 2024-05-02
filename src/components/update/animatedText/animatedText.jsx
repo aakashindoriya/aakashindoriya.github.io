@@ -15,10 +15,10 @@ const AnimatedText = () => {
 
     return () => clearInterval(interval);
   }, []);
-  console.log(styles);
+
   return (
     <div className={styles.animatedText}>
-      <div>Hey I Am Aakash </div>
+      <div>Hey I'm Aakash </div>
       <div>
         <AnimatePresence>
           <motion.div

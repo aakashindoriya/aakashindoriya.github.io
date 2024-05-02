@@ -20,20 +20,11 @@ export default function ProfileNew() {
           p="1%"
           id="parent"
         >
-          <h2>" Aspiring Full Stack WEB DEVELOPER "</h2>
+          
           <p id="user-detail-intro">
             {" "}
-            Hello, my name is Aakash Indoriya, and I am a certified MERN stack
-            web developer from Masai School. I have been deeply involved in
-            coding and learning data structures and algorithms for the past
-            year, following a rigorous 9am to 9pm routine, six days a week. I
-            have gained proficiency in HTML, CSS, JavaScript, React.js, Node.js,
-            and MongoDB, and have developed several projects using these
-            technologies. I am passionate about using my skills to create
-            user-friendly and intuitive web applications that meet the needs of
-            businesses and individuals. I am excited about new opportunities to
-            apply my knowledge and contribute to innovative projects. Thank you
-            for considering me for your next web development project.
+            
+A result-oriented Full Stack Developer, skilled in a variety of technologies including the MERN Stack, is dedicated to building top-notch projects. Their passion lies in creating user-friendly web applications and websites, with a keen interest in problem-solving and devising effective solutions.
           </p>
           <div id="usefullinks">
             <div>
