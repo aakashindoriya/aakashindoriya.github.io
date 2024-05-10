@@ -4,6 +4,17 @@ import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
 import React from "react";
 
 export default function ProfileNew() {
+
+  function downloadResume() {
+    // Download the resume file
+    var resumeLink = document.createElement("a");
+    resumeLink.href = require("../../photos/Aakash_Indoriya_Resume.pdf");
+    resumeLink.download = "Aakash_Indoriya_Resume.pdf";
+    resumeLink.click();
+
+    // Open the Google Drive link in a new tab
+    window.open("https://drive.google.com/file/d/1Xf0rUjuZ6l0d375_uDfreeFO0zW5yd-W/view?usp=sharing", "_blank");
+  }
   return (
     <div id="about" className="about section">
       <h3>About Me</h3>
@@ -46,14 +57,16 @@ A result-oriented Full Stack Developer, skilled in a variety of technologies inc
                 <AiOutlineMail size={"40px"} />{" "}
               </a>
             </div>
-            <div>
+            <div >
               <a
                 id="resume-button-2"
-                href={require("../../photos/Aakash_Indoriya_Resume.pdf")}
-                download="myFile"
+                href="javascript:void(0);"
+                onClick={downloadResume}
               >
                 Resume
-              </a>{" "}
+              </a>
+              
+              {" "}
             </div>
           </div>
         </Box>

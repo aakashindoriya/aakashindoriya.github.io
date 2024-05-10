@@ -28,7 +28,7 @@ export default function Uprojects() {
     {
       title: "Zara.com",
       image:
-        "https://camo.githubusercontent.com/4459d63c16f07ca9ca7be3359ff18d37069477e85ec03c0b85967cc8a1994cf8/68747470733a2f2f692e6962622e636f2f6b58396a58646b2f73637265656e636170747572652d7a6172612d696e647370756e6b2d323032322d31322d31392d31332d31392d34362d31317a6f6e2e6a7067",
+        "https://camo.githubusercontent.com/c8c9f5a1fbd7c15efe2b19a3166f885285104d224f7d6a365ed8251c242d248c/68747470733a2f2f692e6962622e636f2f6b58396a58646b2f73637265656e636170747572652d7a6172612d696e647370756e6b2d323032322d31322d31392d31332d31392d34362d31317a6f6e2e6a7067",
       techStack: [
         "https://cdn1.iconfinder.com/data/icons/unicons-line-vol-5/24/react-256.png",
         "https://avatars.githubusercontent.com/u/54212428?s=280&v=4",
@@ -38,7 +38,7 @@ export default function Uprojects() {
         "https://cdn.iconscout.com/icon/free/png-512/free-express-8-1175029.png?f=avif&w=256",
       ],
       github: "https://github.com/aakashindoriya/nebulous-unit-9563",
-      live: "zara.indspunk.com/",
+      live: "https://zara-aakashindoriya.vercel.app/",
       description:
         "Zara is a Spanish multi-national retail clothing chain. It specialises in fast fashion, and sells clothing, accessories, shoes, beauty products and perfumes",
     },
@@ -72,7 +72,7 @@ export default function Uprojects() {
         "https://cdn.iconscout.com/icon/free/png-512/free-express-8-1175029.png?f=avif&w=256",
       ],
       github: "https://github.com/aakashindoriya/shorturl",
-      live: "https://fair-gray-jay-shoe.cyclic.app/",
+      live: "https://shorturl-pv3n.onrender.com/",
       description:
         "Short It Out is a simple web application that allows users to shorten long URLs and create custom, shortened URLs with a unique nickname. Built using Node.js and Express with a MongoDB database, this app provides a fast and secure way to create short links for easy sharing and tracking.",
     },

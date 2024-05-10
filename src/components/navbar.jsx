@@ -11,6 +11,17 @@ import DrawerExample from "./profile";
 export default function Navbar(){
     const [isMobile] = useMediaQuery("(max-width: 768px)")
     const {theme,changeTheme,executeScroll}=useContext(Theme)
+    function downloadResume() {
+        // Download the resume file
+        console.log("yoyo")
+        var resumeLink = document.createElement("a");
+        resumeLink.href = require("../photos/Aakash_Indoriya_Resume.pdf");
+        resumeLink.download = "Aakash_Indoriya_Resume.pdf";
+        resumeLink.click();
+    
+        // Open the Google Drive link in a new tab
+        window.open("https://drive.google.com/file/d/1Xf0rUjuZ6l0d375_uDfreeFO0zW5yd-W/view?usp=sharing", "_blank");
+      }
     return(
        
         <Box pos={"sticky"} backgroundColor={theme.bgColor} top="0px" zIndex={1} >
@@ -45,7 +56,7 @@ export default function Navbar(){
                  <Button as={motion.div} whileHover={{scale:1.2 ,color:"teal"}} bgColor={"transparent"} border="none" size={"md"}><Text as={"b"}  color={theme.textcolor} className="nav-link contact" onClick={()=>executeScroll("contact")}>CONTACT</Text></Button>
                  <Button as={motion.div} whileHover={{scale:1.2 ,color:"teal"}} bgColor={"transparent"} border="none" size={"md"}><Text as={"b"}  color={theme.textcolor}>
                 
-                 <a href={require("../photos/Aakash_Indoriya_Resume.pdf")} download="myFile" className="nav-link resume">RESUME</a>
+                 <a href="javajavascript:void(0);"  className="nav-link resume" onClick={downloadResume}>RESUME</a>
                     
                     </Text></Button>
                  </Flex>
